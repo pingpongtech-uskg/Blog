@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Static Site Generator on PingPongTech (JP)</title>
-    <link>http://localhost:58555/jp/tags/static-site-generator/</link>
+    <link>http://localhost:61855/jp/tags/static-site-generator/</link>
     <description>Recent content in Static Site Generator on PingPongTech (JP)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:58555/jp/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:61855/jp/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>HugoとJekyllの比較</title>
-      <link>http://localhost:58555/jp/posts/hugo-vs-jekyll-a-comparison/</link>
+      <link>http://localhost:61855/jp/posts/hugo-vs-jekyll-a-comparison/</link>
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:58555/jp/posts/hugo-vs-jekyll-a-comparison/</guid>
+      <guid>http://localhost:61855/jp/posts/hugo-vs-jekyll-a-comparison/</guid>
       <description>HugoとJekyllの比較に関する記事です。</description>
       
     </item>
