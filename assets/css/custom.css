@@ -12,7 +12,7 @@
      In Blowfish, this is often a section or div with class 'grid' inside the list templates.
      We'll try to target it broadly but safely. 
   */
-  
+
   .article-list {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -20,9 +20,31 @@
   }
 }
 
+
+/* Reduce top padding for specific layouts to avoid clashing with logo */
+.max-w-prose {
+  margin-top: 2rem !important;
+  /* Standardize top margin */
+}
+
+/* Specific fix for the About page content container if needed */
+article.max-w-prose {
+  margin-top: 1rem !important;
+}
+
+/* Ensure images don't overflow in grid */
+.grid img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Fixed height for uniformity */
+
 /* Ensure images cover the area nicely */
 .article-list img {
   width: 100%;
-  height: 200px; /* Fixed height for uniformity */
+  height: 200px;
+  /* Fixed height for uniformity */
   object-fit: cover;
 }

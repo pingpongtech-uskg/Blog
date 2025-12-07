@@ -26,6 +26,7 @@ defaultContentLanguage = "en"
     showLikes = false
     showReadingTime = true
     showWordCount = false
+    sharingLinks = ["facebook", "twitter", "threads", "instagram"]
 
   [params.footer]
     showScrollToTop = true
