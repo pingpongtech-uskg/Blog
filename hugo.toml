@@ -13,6 +13,8 @@ defaultContentLanguage = "en"
   enableSearch = true
   fuse = true # Enable Fuse.js for search
   logo = "img/avatar.png" # Placeholder for the logo we will generate
+  favicon = "favicon.png"
+  images = ["img/avatar.png"] # Open Graph image
 
   # Homepage setup
   [params.homepage]
@@ -20,6 +22,16 @@ defaultContentLanguage = "en"
     showRecent = true
     recentLimit = 6
     
+  [params.list]
+    showHero = true
+    showBreadcrumbs = false
+    showSummary = true
+    showTableOfContents = true
+    cardView = true
+    showWordCount = false
+    showAuthorBottom = true
+    sharingLinks = ["facebook", "twitter", "threads", "instagram"]
+
   [params.article]
     showDate = true
     showViews = true

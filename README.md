@@ -62,6 +62,7 @@ Since the `hugo` command was not found in your environment, I could not build th
 - **Socials**: Updated LinkedIn URL and added Facebook, X, Threads, and Instagram sharing.
 - **UI/UX**: Implemented "Medium-style" Author Intro and fixed padding issues on the About page.
 - **Fixes**: Resolved 404 issues on Blog/About pages.
+- **Brand Consistency**: Set Open Graph (social preview) and Favicon to use the logo avatar.
 
 ### Verification: JP Homepage
 ![JP Homepage Fixed](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/jp_homepage_with_content_1765126545163.png)
@@ -71,11 +72,8 @@ Since the `hugo` command was not found in your environment, I could not build th
 ![Refined Article Footer](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/refined_footer_final_v2_1765127670123.png)
 
 ### Verification: Header Logo Resize
-![Header Logo Resized](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/header_logo_resized_1765127993043.png)
-
-
-### Verification: 4-Column Layout
-![4-Column Grid](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/verify_4col_layout_1765128295390.webp)
+### Verification: Layout Fixes
+![Final Layout Verification](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/verify_fix_final_1765128639686.webp)
 
 ### Current Logo
 ![New Logo](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/new_logo_check_1765125514037.png)

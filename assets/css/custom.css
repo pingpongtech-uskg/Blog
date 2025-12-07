@@ -49,12 +49,14 @@ article.max-w-prose {
 }
 
 /* Resize header logo to match title text size */
+/* Resize header logo to match title text size */
+img.logo,
+.logo,
 #single_header img,
 nav img.logo,
-/* Assuming there might be a specific class, or generic nav img */
 nav a.flex img {
   height: 40px !important;
-  /* Adjust to match text size approx */
+  max-height: 40px !important;
   width: auto !important;
 }
 
