@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zero Trust on PingPongTech (JP)</title>
+    <link>http://localhost:52116/jp/tags/zero-trust/</link>
+    <description>Recent content in Zero Trust on PingPongTech (JP)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>jp</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Sat, 06 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:52116/jp/tags/zero-trust/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ゼロトラストセキュリティを理解する</title>
+      <link>http://localhost:52116/jp/posts/understanding-zero-trust-security/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:52116/jp/posts/understanding-zero-trust-security/</guid>
+      <description>ゼロトラストセキュリティを理解するに関する記事です。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -30,7 +30,7 @@ width: "max-w-3xl"
 歡迎討論新專案、演講機會，或單純交流最新科技技術。
 
 *   **GitHub**: [github.com/user](https://github.com/)
-*   **LinkedIn**: [linkedin.com/in/user](https://linkedin.com/)
+*   **LinkedIn**: [Shih Yu-Chih](https://www.linkedin.com/in/shih-yuchih/)
 *   **X (Twitter)**: [@user](https://x.com/)
 
 ---

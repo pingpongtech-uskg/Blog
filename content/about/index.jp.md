@@ -30,7 +30,7 @@ width: "max-w-3xl"
 新しいプロジェクトの相談や技術的なディスカッションなど、いつでも歓迎します。
 
 *   **GitHub**: [github.com/user](https://github.com/)
-*   **LinkedIn**: [linkedin.com/in/user](https://linkedin.com/)
+*   **LinkedIn**: [Shih Yu-Chih](https://www.linkedin.com/in/shih-yuchih/)
 *   **X (Twitter)**: [@user](https://x.com/)
 
 ---

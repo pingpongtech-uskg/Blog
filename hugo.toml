@@ -40,12 +40,12 @@ defaultContentLanguage = "en"
       displayName = "EN"
       isoCode = "en"
 
-  [languages.ja]
+  [languages.jp]
     languageName = "Japanese"
     title = "PingPongTech (JP)"
     weight = 2
     # contentDir removed
-    [languages.ja.params]
+    [languages.jp.params]
       displayName = "JP"
       isoCode = "ja"
 
@@ -59,16 +59,42 @@ defaultContentLanguage = "en"
       isoCode = "zh-kw"
 
 [menu]
-  # Main Menu (Header)
-  [[menu.main]]
+# Main Menu (Header) moved to language sections
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/posts/"
     weight = 10
-  [[menu.main]]
+  [[languages.en.menu.main]]
     identifier = "about"
     name = "About Me"
     url = "/about/"
+    weight = 20
+
+[languages.jp.menu]
+  [[languages.jp.menu.main]]
+    identifier = "blog"
+    name = "ブログ"
+    url = "/jp/posts/"
+    weight = 10
+  [[languages.jp.menu.main]]
+    identifier = "about"
+    name = "私について"
+    url = "/jp/about/"
+    weight = 20
+
+[languages.zh-tw.menu]
+  [[languages.zh-tw.menu.main]]
+    identifier = "blog"
+    name = "部落格"
+    url = "/zh-tw/posts/"
+    weight = 10
+  [[languages.zh-tw.menu.main]]
+    identifier = "about"
+    name = "關於我"
+    url = "/zh-tw/about/"
     weight = 20
 
   # Footer Socials
@@ -81,7 +107,7 @@ defaultContentLanguage = "en"
   [[menu.social]]
     identifier = "linkedin"
     name = "LinkedIn"
-    url = "https://linkedin.com/"
+    url = "https://www.linkedin.com/in/shih-yuchih/"
     weight = 20
     params = { icon = "linkedin" }
   [[menu.social]]

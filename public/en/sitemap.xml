@@ -3,201 +3,201 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:52116/about/</loc>
     <lastmod>2024-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/about/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/about/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/about/"
+      href="http://localhost:52116/zh-tw/about/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/about/"
+      href="http://localhost:52116/about/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
+    <loc>http://localhost:52116/posts/hello-world/</loc>
     <lastmod>2024-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/hello-world/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/hello-world/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/hello-world/"
+      href="http://localhost:52116/zh-tw/posts/hello-world/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/hello-world/"
+      href="http://localhost:52116/posts/hello-world/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:52116/</loc>
     <lastmod>2024-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/"
+      href="http://localhost:52116/zh-tw/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/"
+      href="http://localhost:52116/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:52116/posts/</loc>
     <lastmod>2024-06-07T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/"
+      href="http://localhost:52116/zh-tw/posts/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/"
+      href="http://localhost:52116/posts/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/privacy-policy/</loc>
+    <loc>http://localhost:52116/privacy-policy/</loc>
     <lastmod>2024-06-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/terms/</loc>
+    <loc>http://localhost:52116/terms/</loc>
     <lastmod>2024-06-07T00:00:00+00:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/introduction-to-rust-for-python-developers/</loc>
+    <loc>http://localhost:52116/posts/introduction-to-rust-for-python-developers/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/introduction-to-rust-for-python-developers/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/introduction-to-rust-for-python-developers/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/introduction-to-rust-for-python-developers/"
+      href="http://localhost:52116/zh-tw/posts/introduction-to-rust-for-python-developers/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/introduction-to-rust-for-python-developers/"
+      href="http://localhost:52116/posts/introduction-to-rust-for-python-developers/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/how-to-secure-your-cloud-infrastructure/</loc>
+    <loc>http://localhost:52116/posts/how-to-secure-your-cloud-infrastructure/</loc>
     <lastmod>2024-01-21T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/how-to-secure-your-cloud-infrastructure/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/how-to-secure-your-cloud-infrastructure/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/how-to-secure-your-cloud-infrastructure/"
+      href="http://localhost:52116/zh-tw/posts/how-to-secure-your-cloud-infrastructure/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/how-to-secure-your-cloud-infrastructure/"
+      href="http://localhost:52116/posts/how-to-secure-your-cloud-infrastructure/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/top-10-vs-code-extensions-for-devops/</loc>
+    <loc>http://localhost:52116/posts/top-10-vs-code-extensions-for-devops/</loc>
     <lastmod>2024-01-16T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/top-10-vs-code-extensions-for-devops/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/top-10-vs-code-extensions-for-devops/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/top-10-vs-code-extensions-for-devops/"
+      href="http://localhost:52116/zh-tw/posts/top-10-vs-code-extensions-for-devops/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/top-10-vs-code-extensions-for-devops/"
+      href="http://localhost:52116/posts/top-10-vs-code-extensions-for-devops/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/hugo-vs-jekyll-a-comparison/</loc>
+    <loc>http://localhost:52116/posts/hugo-vs-jekyll-a-comparison/</loc>
     <lastmod>2024-01-11T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/hugo-vs-jekyll-a-comparison/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/hugo-vs-jekyll-a-comparison/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/hugo-vs-jekyll-a-comparison/"
+      href="http://localhost:52116/zh-tw/posts/hugo-vs-jekyll-a-comparison/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/hugo-vs-jekyll-a-comparison/"
+      href="http://localhost:52116/posts/hugo-vs-jekyll-a-comparison/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/understanding-zero-trust-security/</loc>
+    <loc>http://localhost:52116/posts/understanding-zero-trust-security/</loc>
     <lastmod>2024-01-06T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/understanding-zero-trust-security/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/understanding-zero-trust-security/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/understanding-zero-trust-security/"
+      href="http://localhost:52116/zh-tw/posts/understanding-zero-trust-security/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/understanding-zero-trust-security/"
+      href="http://localhost:52116/posts/understanding-zero-trust-security/"
     />
   </url>
   <url>
-    <loc>http://localhost:1313/posts/the-future-of-ai-agents/</loc>
+    <loc>http://localhost:52116/posts/the-future-of-ai-agents/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
       rel="alternate"
-      hreflang="ja"
-      href="http://localhost:1313/ja/posts/the-future-of-ai-agents/"
+      hreflang="jp"
+      href="http://localhost:52116/jp/posts/the-future-of-ai-agents/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="zh-tw"
-      href="http://localhost:1313/zh-tw/posts/the-future-of-ai-agents/"
+      href="http://localhost:52116/zh-tw/posts/the-future-of-ai-agents/"
     />
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="http://localhost:1313/posts/the-future-of-ai-agents/"
+      href="http://localhost:52116/posts/the-future-of-ai-agents/"
     />
   </url>
 </urlset>

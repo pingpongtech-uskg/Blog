@@ -29,7 +29,7 @@ On this blog, you'll find content categorized into:
 I'm always open to discussing new projects, speaking opportunities, or just geeking out over the latest tech.
 
 *   **GitHub**: [github.com/user](https://github.com/)
-*   **LinkedIn**: [linkedin.com/in/user](https://linkedin.com/)
+*   **LinkedIn**: [Shih Yu-Chih](https://www.linkedin.com/in/shih-yuchih/)
 *   **X (Twitter)**: [@user](https://x.com/)
 *   **Email**: contact@pingpongtech.us.kg
 
