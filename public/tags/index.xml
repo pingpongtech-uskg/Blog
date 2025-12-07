@@ -2,159 +2,159 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PingPongTech</title>
-    <link>http://localhost:53555/tags/</link>
+    <link>http://localhost:53846/tags/</link>
     <description>Recent content in Tags on PingPongTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53555/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53846/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Technology</title>
-      <link>http://localhost:53555/tags/technology/</link>
+      <link>http://localhost:53846/tags/technology/</link>
       <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/technology/</guid>
+      <guid>http://localhost:53846/tags/technology/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>http://localhost:53555/tags/welcome/</link>
+      <link>http://localhost:53846/tags/welcome/</link>
       <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/welcome/</guid>
+      <guid>http://localhost:53846/tags/welcome/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Coding</title>
-      <link>http://localhost:53555/tags/coding/</link>
+      <link>http://localhost:53846/tags/coding/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/coding/</guid>
+      <guid>http://localhost:53846/tags/coding/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://localhost:53555/tags/python/</link>
+      <link>http://localhost:53846/tags/python/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/python/</guid>
+      <guid>http://localhost:53846/tags/python/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Rust</title>
-      <link>http://localhost:53555/tags/rust/</link>
+      <link>http://localhost:53846/tags/rust/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/rust/</guid>
+      <guid>http://localhost:53846/tags/rust/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Cloud</title>
-      <link>http://localhost:53555/tags/cloud/</link>
+      <link>http://localhost:53846/tags/cloud/</link>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/cloud/</guid>
+      <guid>http://localhost:53846/tags/cloud/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Security</title>
-      <link>http://localhost:53555/tags/security/</link>
+      <link>http://localhost:53846/tags/security/</link>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/security/</guid>
+      <guid>http://localhost:53846/tags/security/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>DevOps</title>
-      <link>http://localhost:53555/tags/devops/</link>
+      <link>http://localhost:53846/tags/devops/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/devops/</guid>
+      <guid>http://localhost:53846/tags/devops/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>VS Code</title>
-      <link>http://localhost:53555/tags/vs-code/</link>
+      <link>http://localhost:53846/tags/vs-code/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/vs-code/</guid>
+      <guid>http://localhost:53846/tags/vs-code/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://localhost:53555/tags/hugo/</link>
+      <link>http://localhost:53846/tags/hugo/</link>
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/hugo/</guid>
+      <guid>http://localhost:53846/tags/hugo/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Static Site Generator</title>
-      <link>http://localhost:53555/tags/static-site-generator/</link>
+      <link>http://localhost:53846/tags/static-site-generator/</link>
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/static-site-generator/</guid>
+      <guid>http://localhost:53846/tags/static-site-generator/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Zero Trust</title>
-      <link>http://localhost:53555/tags/zero-trust/</link>
+      <link>http://localhost:53846/tags/zero-trust/</link>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/zero-trust/</guid>
+      <guid>http://localhost:53846/tags/zero-trust/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Agents</title>
-      <link>http://localhost:53555/tags/agents/</link>
+      <link>http://localhost:53846/tags/agents/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/agents/</guid>
+      <guid>http://localhost:53846/tags/agents/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AI</title>
-      <link>http://localhost:53555/tags/ai/</link>
+      <link>http://localhost:53846/tags/ai/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/ai/</guid>
+      <guid>http://localhost:53846/tags/ai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Future</title>
-      <link>http://localhost:53555/tags/future/</link>
+      <link>http://localhost:53846/tags/future/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53555/tags/future/</guid>
+      <guid>http://localhost:53846/tags/future/</guid>
       <description></description>
       
     </item>

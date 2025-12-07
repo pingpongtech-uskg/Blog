@@ -44,7 +44,22 @@ article.max-w-prose {
 /* Ensure images cover the area nicely */
 .article-list img {
   width: 100%;
-  height: 200px;
-  /* Fixed height for uniformity */
+  aspect-ratio: 16/9;
   object-fit: cover;
+}
+
+/* Resize header logo to match title text size */
+#single_header img,
+nav img.logo,
+/* Assuming there might be a specific class, or generic nav img */
+nav a.flex img {
+  height: 3rem !important;
+  /* Adjust to match text size approx */
+  width: auto !important;
+}
+
+/* Specific fix for Blowfish header logo if it's just an img in the first link of nav */
+header nav a:first-child img {
+  max-height: 2.5rem !important;
+  width: auto !important;
 }
