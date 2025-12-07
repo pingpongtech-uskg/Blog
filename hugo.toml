@@ -21,6 +21,7 @@ defaultContentLanguage = "en"
     layout = "background" 
     showRecent = true
     recentLimit = 6
+    cardView = true
     
   [params.list]
     showHero = true
