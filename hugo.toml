@@ -35,7 +35,7 @@ defaultContentLanguage = "en"
 
   [params.article]
     showDate = true
-    showViews = true
+    showViews = false
     showLikes = false
     showReadingTime = true
     showWordCount = false

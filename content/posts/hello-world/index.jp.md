@@ -1,4 +1,5 @@
 ---
+featureimage: "img/card_prototype_hu_aa174aa81b6d6e7b.png"
 title: "Hello World: PingPongTechへようこそ"
 date: 2024-06-07
 draft: false

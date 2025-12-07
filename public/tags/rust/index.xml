@@ -2,22 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on PingPongTech</title>
-    <link>http://localhost:61855/tags/rust/</link>
+    <link>http://localhost:1313/tags/rust/</link>
     <description>Recent content in Rust on PingPongTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:61855/tags/rust/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Introduction to Rust for Python Developers</title>
-      <link>http://localhost:61855/posts/introduction-to-rust-for-python-developers/</link>
-      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:61855/posts/introduction-to-rust-for-python-developers/</guid>
-      <description>A pseudo article about Introduction to Rust for Python Developers.</description>
-      
-    </item>
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
