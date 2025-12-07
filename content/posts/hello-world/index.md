@@ -5,6 +5,7 @@ draft: false
 tags: ["Technology", "Welcome"]
 categories: ["General"]
 summary: "Welcome to my new blog about Cybersecurity and AI."
+featureimage: "img/card_prototype.png"
 ---
 
 ## Welcome to PingPongTech

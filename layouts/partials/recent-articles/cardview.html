@@ -1,11 +1,45 @@
-{{ $recentArticles := 5 }}
-{{ $recentArticles = .Site.Params.homepage.showRecentItems }}
+{{ $recentArticles := 24 }}
 
-
-<section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-  {{ range first $recentArticles (.Paginate (where .Site.RegularPages "Type" "in"
+<section id="recent-articles-list" class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  {{ range $index, $element := first $recentArticles (.Paginate (where .Site.RegularPages "Type" "in"
   .Site.Params.mainSections)).Pages
   }}
-  {{ partial "article-link/card.html" . }}
+  <div class="recent-article-card {{ if ge $index 6 }}hidden-card{{ end }}" {{ if ge $index 6 }}style="display: none;"
+    {{ end }}>
+    {{ partial "article-link/card.html" . }}
+  </div>
   {{ end }}
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    let ticking = false;
+    const scrollHandler = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const hiddenCards = document.querySelectorAll('.recent-article-card.hidden-card');
+          if (hiddenCards.length === 0) {
+            window.removeEventListener('scroll', scrollHandler);
+            return;
+          }
+
+          const rect = document.getElementById('recent-articles-list').getBoundingClientRect();
+          const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+
+          // If the bottom of the list is approaching the viewport (within 200px)
+          if (rect.bottom <= windowHeight + 800) {
+            // Reveal next 6
+            for (let i = 0; i < 6 && i < hiddenCards.length; i++) {
+              hiddenCards[i].style.display = 'block';
+              hiddenCards[i].classList.remove('hidden-card');
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', scrollHandler);
+  });
+</script>
