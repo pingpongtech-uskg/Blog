@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on PingPongTech (JP)</title>
-    <link>http://localhost:56919/jp/categories/technology/</link>
+    <link>http://localhost:58555/jp/categories/technology/</link>
     <description>Recent content in Technology on PingPongTech (JP)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56919/jp/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:58555/jp/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python開発者のためのRust入門</title>
-      <link>http://localhost:56919/jp/posts/introduction-to-rust-for-python-developers/</link>
+      <link>http://localhost:58555/jp/posts/introduction-to-rust-for-python-developers/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:56919/jp/posts/introduction-to-rust-for-python-developers/</guid>
+      <guid>http://localhost:58555/jp/posts/introduction-to-rust-for-python-developers/</guid>
       <description>Python開発者のためのRust入門に関する記事です。</description>
       
     </item>
     
     <item>
       <title>DevOps向けVS Code拡張機能トップ10</title>
-      <link>http://localhost:56919/jp/posts/top-10-vs-code-extensions-for-devops/</link>
+      <link>http://localhost:58555/jp/posts/top-10-vs-code-extensions-for-devops/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:56919/jp/posts/top-10-vs-code-extensions-for-devops/</guid>
+      <guid>http://localhost:58555/jp/posts/top-10-vs-code-extensions-for-devops/</guid>
       <description>DevOps向けVS Code拡張機能トップ10に関する記事です。</description>
       
     </item>
     
     <item>
       <title>HugoとJekyllの比較</title>
-      <link>http://localhost:56919/jp/posts/hugo-vs-jekyll-a-comparison/</link>
+      <link>http://localhost:58555/jp/posts/hugo-vs-jekyll-a-comparison/</link>
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:56919/jp/posts/hugo-vs-jekyll-a-comparison/</guid>
+      <guid>http://localhost:58555/jp/posts/hugo-vs-jekyll-a-comparison/</guid>
       <description>HugoとJekyllの比較に関する記事です。</description>
       
     </item>

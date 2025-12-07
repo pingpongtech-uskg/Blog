@@ -64,7 +64,8 @@ Since the `hugo` command was not found in your environment, I could not build th
 - **Fixes**: Resolved 404 issues on Blog/About pages.
 - **Brand Consistency**: Set Open Graph (social preview) and Favicon to use the logo avatar.
 - **Homepage Layout**: Updated "Recent Articles" to use the same 4-column card layout as the blog list.
-- **Landing Page**: Created a custom animated hero section ("Where Your Journey Begins") with a solarized-themed background.
+- **Landing Page**: Created a custom animated hero section with particle network animation ("switching connections") and reduced height (50vh).
+- **Favicon**: Fixed favicon resolution issues by correctly serving `.ico` and `.png` formats from static assets.
 - **Lazy Loading**: Implemented "Reveal on Scroll" for homepage recent articles.
 - **Card Design**: Refined card layout (Image -> Meta -> Title) and generated prototype image.
 - **Lazy Loading**: Implemented "Reveal on Scroll" for homepage recent articles (loads 6, reveals more on scroll).
@@ -83,6 +84,7 @@ Since the `hugo` command was not found in your environment, I could not build th
 ![Homepage Grid Verification](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/verify_homepage_grid_final_1765128993207.webp)
 ![Final Card & Lazy Load Verification](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/verify_card_lazy_favicon_1765129430906.webp)
 ![Animated Landing Page Verification](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/verify_landing_favicon_1765129914169.webp)
+![Particle Animation Verification](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/verify_animation_favicon_1765130929623.webp)
 
 ### Current Logo
 ![New Logo](/Users/ikushishih/.gemini/antigravity/brain/a21beb98-ea08-47d6-9b6e-80e16e6db9e1/new_logo_check_1765125514037.png)
