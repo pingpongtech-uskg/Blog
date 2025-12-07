@@ -8,10 +8,11 @@ defaultContentLanguage = "en"
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  colorScheme = "blowfish"
-  defaultTheme = "dark"
+  colorScheme = "solarized"
+  defaultTheme = "light"
   enableSearch = true
   fuse = true # Enable Fuse.js for search
+  logo = "img/avatar.png" # Placeholder for the logo we will generate
 
   # Homepage setup
   [params.homepage]
@@ -34,27 +35,25 @@ defaultContentLanguage = "en"
     languageName = "English"
     title = "PingPongTech"
     weight = 1
-    contentDir = "content/en"
+    # contentDir removed to use filename extensions
     [languages.en.params]
       displayName = "EN"
       isoCode = "en"
-      # Footer menus
-      footer = ["About", "Blog", "Tags"]
 
   [languages.ja]
     languageName = "Japanese"
     title = "PingPongTech (JP)"
     weight = 2
-    contentDir = "content/ja"
+    # contentDir removed
     [languages.ja.params]
-      displayName = "JA"
+      displayName = "JP"
       isoCode = "ja"
 
   [languages.zh-tw]
     languageName = "Traditional Chinese"
     title = "PingPongTech (TW)"
     weight = 3
-    contentDir = "content/zh-tw"
+    # contentDir removed
     [languages.zh-tw.params]
       displayName = "ZH"
       isoCode = "zh-kw"

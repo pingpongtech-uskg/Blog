@@ -6,15 +6,32 @@ layout: "simple"
 width: "max-w-3xl"
 ---
 
-## 你好
+## 你好！
 
-我是一名熱愛 **AI** 和**科技**的網路安全**解決方案工程師**。
-**PingPongTech** 是我的個人部落格，旨在分享關於科技界最新趨勢的見解、教學和想法。
+我是一名專精於網路安全的**解決方案工程師**。
+我致力於成為複雜技術安全挑戰與商業解決方案之間的橋樑。
+我對 **AI（人工智慧）** 與**科技**的交集充滿熱情，探索 AI Agent 如何徹底改變安全維運（有時甚至是破壞它！）。
 
-### 關注領域
-* **網路安全**: 網路防禦、威脅情資、零信任架構。
-* **人工智慧 (AI)**: 大型語言模型 (LLM)、Agent、RAG 應用程式。
-* **科技**: 雲端架構、DevOps、未來科技。
+**PingPongTech** 是我的數位花園。我在這裡記錄學習歷程、分享技術教學，並提供對未來科技的見解。
 
-### 聯絡方式
-歡迎查看我的 [GitHub](https://github.com/) 專案或在 [LinkedIn](https://linkedin.com/) 上與我聯繫。
+### 🛠️ 技術堆疊
+*   **資訊安全**: SIEM, SOAR, 零信任架構, 雲端安全 (AWS/Azure).
+*   **AI/ML**: LLM 整合, RAG (檢索增強生成), LangChain.
+*   **DevOps**: Docker, Kubernetes, CI/CD Pipelines, Hugo.
+*   **程式語言**: Python, Go, Rust, JavaScript.
+
+### 🎯 寫作主題
+在這個部落格中，你將找到以下內容：
+1.  **網路安全深入剖析**: 分析最新的 CVE、防禦策略與藍隊戰術。
+2.  **AI 實驗**: 建構 Agent、微調模型與 AI 倫理探討。
+3.  **技術教學**: VS Code, Linux, Cloudflare 等工具的使用指南。
+
+### 📬 聯絡我
+歡迎討論新專案、演講機會，或單純交流最新科技技術。
+
+*   **GitHub**: [github.com/user](https://github.com/)
+*   **LinkedIn**: [linkedin.com/in/user](https://linkedin.com/)
+*   **X (Twitter)**: [@user](https://x.com/)
+
+---
+*「真正的智慧在於知道自己一無所知。」 – 蘇格拉底（以及每一位除錯者）*

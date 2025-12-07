@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PingPongTech (JP)</title>
+    <link>http://localhost:1313/ja/</link>
+    <description>Recent content on PingPongTech (JP)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/ja/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello World: PingPongTechへようこそ</title>
+      <link>http://localhost:1313/ja/posts/hello-world/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/hello-world/</guid>
+      <description>サイバーセキュリティとAIに関する新しいブログへようこそ。</description>
+      
+    </item>
+    
+    <item>
+      <title>私について</title>
+      <link>http://localhost:1313/ja/about/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/about/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;こんにちは！
+    &lt;div id=&#34;こんにちは&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e3%81%93%e3%82%93%e3%81%ab%e3%81%a1%e3%81%af&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;
+    
+&lt;/h2&gt;
+&lt;p&gt;私はサイバーセキュリティを専門とする&lt;strong&gt;ソリューションエンジニア&lt;/strong&gt;です。
+技術的なセキュリティの課題とビジネスソリューションの架け橋となることを使命としています。
+私の情熱は&lt;strong&gt;AI（人工知能）&lt;strong&gt;と&lt;/strong&gt;テクノロジー&lt;/strong&gt;の交差点にあり、AIエージェントがセキュリティ運用をどのように変革できるか（そして時にはどのように破壊するか！）を探求しています。&lt;/p&gt;
+&lt;p&gt;このブログ &lt;strong&gt;PingPongTech&lt;/strong&gt; は、私のデジタルガーデンです。学習の記録、技術チュートリアル、そしてテクノロジーの未来に関する洞察をここで共有します。&lt;/p&gt;
+
+&lt;h3 class=&#34;relative group&#34;&gt;🛠️ 技術スタック
+    &lt;div id=&#34;-技術スタック&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#-%e6%8a%80%e8%a1%93%e3%82%b9%e3%82%bf%e3%83%83%e3%82%af&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;
+    
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;セキュリティ&lt;/strong&gt;: SIEM, SOAR, ゼロトラストアーキテクチャ, クラウドセキュリティ (AWS/Azure).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI/ML&lt;/strong&gt;: LLM統合, RAG (検索拡張生成), LangChain.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt;: Docker, Kubernetes, CI/CDパイプライン, Hugo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;言語&lt;/strong&gt;: Python, Go, Rust, JavaScript.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class=&#34;relative group&#34;&gt;🎯 ブログのテーマ
+    &lt;div id=&#34;-ブログのテーマ&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#-%e3%83%96%e3%83%ad%e3%82%b0%e3%81%ae%e3%83%86%e3%83%bc%e3%83%9e&#34; aria-label=&#34;アンカー&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;
+    
+&lt;/h3&gt;
+&lt;p&gt;このブログでは、主に以下のカテゴリーについて発信します：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Python開発者のためのRust入門</title>
+      <link>http://localhost:1313/ja/posts/introduction-to-rust-for-python-developers/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/introduction-to-rust-for-python-developers/</guid>
+      <description>Python開発者のためのRust入門に関する記事です。</description>
+      
+    </item>
+    
+    <item>
+      <title>クラウドインフラを保護する方法</title>
+      <link>http://localhost:1313/ja/posts/how-to-secure-your-cloud-infrastructure/</link>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/how-to-secure-your-cloud-infrastructure/</guid>
+      <description>クラウドインフラを保護する方法に関する記事です。</description>
+      
+    </item>
+    
+    <item>
+      <title>DevOps向けVS Code拡張機能トップ10</title>
+      <link>http://localhost:1313/ja/posts/top-10-vs-code-extensions-for-devops/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/top-10-vs-code-extensions-for-devops/</guid>
+      <description>DevOps向けVS Code拡張機能トップ10に関する記事です。</description>
+      
+    </item>
+    
+    <item>
+      <title>HugoとJekyllの比較</title>
+      <link>http://localhost:1313/ja/posts/hugo-vs-jekyll-a-comparison/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/hugo-vs-jekyll-a-comparison/</guid>
+      <description>HugoとJekyllの比較に関する記事です。</description>
+      
+    </item>
+    
+    <item>
+      <title>ゼロトラストセキュリティを理解する</title>
+      <link>http://localhost:1313/ja/posts/understanding-zero-trust-security/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/understanding-zero-trust-security/</guid>
+      <description>ゼロトラストセキュリティを理解するに関する記事です。</description>
+      
+    </item>
+    
+    <item>
+      <title>AIエージェントの未来</title>
+      <link>http://localhost:1313/ja/posts/the-future-of-ai-agents/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ja/posts/the-future-of-ai-agents/</guid>
+      <description>AIエージェントの未来に関する記事です。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

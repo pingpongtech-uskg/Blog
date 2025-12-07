@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static Site Generator on PingPongTech</title>
+    <link>http://localhost:1313/tags/static-site-generator/</link>
+    <description>Recent content in Static Site Generator on PingPongTech</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/static-site-generator/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo vs Jekyll: A Comparison</title>
+      <link>http://localhost:1313/posts/hugo-vs-jekyll-a-comparison/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/hugo-vs-jekyll-a-comparison/</guid>
+      <description>A pseudo article about Hugo vs Jekyll: A Comparison.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PingPongTech (TW)</title>
+    <link>http://localhost:1313/zh-tw/</link>
+    <description>Recent content on PingPongTech (TW)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>© 2025 </copyright>
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello World: 歡迎來到 PingPongTech</title>
+      <link>http://localhost:1313/zh-tw/posts/hello-world/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/hello-world/</guid>
+      <description>歡迎來到我關於網路安全和人工智慧的新部落格。</description>
+      
+    </item>
+    
+    <item>
+      <title>關於我</title>
+      <link>http://localhost:1313/zh-tw/about/</link>
+      <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/about/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;你好！
+    &lt;div id=&#34;你好&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e4%bd%a0%e5%a5%bd&#34; aria-label=&#34;定位點&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;
+    
+&lt;/h2&gt;
+&lt;p&gt;我是一名專精於網路安全的&lt;strong&gt;解決方案工程師&lt;/strong&gt;。
+我致力於成為複雜技術安全挑戰與商業解決方案之間的橋樑。
+我對 &lt;strong&gt;AI（人工智慧）&lt;/strong&gt; 與&lt;strong&gt;科技&lt;/strong&gt;的交集充滿熱情，探索 AI Agent 如何徹底改變安全維運（有時甚至是破壞它！）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PingPongTech&lt;/strong&gt; 是我的數位花園。我在這裡記錄學習歷程、分享技術教學，並提供對未來科技的見解。&lt;/p&gt;
+
+&lt;h3 class=&#34;relative group&#34;&gt;🛠️ 技術堆疊
+    &lt;div id=&#34;-技術堆疊&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#-%e6%8a%80%e8%a1%93%e5%a0%86%e7%96%8a&#34; aria-label=&#34;定位點&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;
+    
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;資訊安全&lt;/strong&gt;: SIEM, SOAR, 零信任架構, 雲端安全 (AWS/Azure).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI/ML&lt;/strong&gt;: LLM 整合, RAG (檢索增強生成), LangChain.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt;: Docker, Kubernetes, CI/CD Pipelines, Hugo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;程式語言&lt;/strong&gt;: Python, Go, Rust, JavaScript.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class=&#34;relative group&#34;&gt;🎯 寫作主題
+    &lt;div id=&#34;-寫作主題&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
+    
+    &lt;span
+        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;
+        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#-%e5%af%ab%e4%bd%9c%e4%b8%bb%e9%a1%8c&#34; aria-label=&#34;定位點&#34;&gt;#&lt;/a&gt;
+    &lt;/span&gt;
+    
+&lt;/h3&gt;
+&lt;p&gt;在這個部落格中，你將找到以下內容：&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>給 Python 開發者的 Rust 入門</title>
+      <link>http://localhost:1313/zh-tw/posts/introduction-to-rust-for-python-developers/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/introduction-to-rust-for-python-developers/</guid>
+      <description>關於給 Python 開發者的 Rust 入門的文章。</description>
+      
+    </item>
+    
+    <item>
+      <title>如何保護您的雲端基礎設施</title>
+      <link>http://localhost:1313/zh-tw/posts/how-to-secure-your-cloud-infrastructure/</link>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/how-to-secure-your-cloud-infrastructure/</guid>
+      <description>關於如何保護您的雲端基礎設施的文章。</description>
+      
+    </item>
+    
+    <item>
+      <title>DevOps 必備的 10 款 VS Code 套件</title>
+      <link>http://localhost:1313/zh-tw/posts/top-10-vs-code-extensions-for-devops/</link>
+      <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/top-10-vs-code-extensions-for-devops/</guid>
+      <description>關於DevOps 必備的 10 款 VS Code 套件的文章。</description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo 與 Jekyll 的比較</title>
+      <link>http://localhost:1313/zh-tw/posts/hugo-vs-jekyll-a-comparison/</link>
+      <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/hugo-vs-jekyll-a-comparison/</guid>
+      <description>關於Hugo 與 Jekyll 的比較的文章。</description>
+      
+    </item>
+    
+    <item>
+      <title>深入了解零信任安全</title>
+      <link>http://localhost:1313/zh-tw/posts/understanding-zero-trust-security/</link>
+      <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/understanding-zero-trust-security/</guid>
+      <description>關於深入了解零信任安全的文章。</description>
+      
+    </item>
+    
+    <item>
+      <title>AI Agent 的未來</title>
+      <link>http://localhost:1313/zh-tw/posts/the-future-of-ai-agents/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/zh-tw/posts/the-future-of-ai-agents/</guid>
+      <description>關於AI Agent 的未來的文章。</description>
+      
+    </item>
+    
+  </channel>
+</rss>
