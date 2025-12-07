@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>問候 on PingPongTech (TW)</title>
-    <link>http://localhost:56539/zh-tw/tags/%E5%95%8F%E5%80%99/</link>
+    <link>http://localhost:56919/zh-tw/tags/%E5%95%8F%E5%80%99/</link>
     <description>Recent content in 問候 on PingPongTech (TW)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56539/zh-tw/tags/%E5%95%8F%E5%80%99/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56919/zh-tw/tags/%E5%95%8F%E5%80%99/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World: 歡迎來到 PingPongTech</title>
-      <link>http://localhost:56539/zh-tw/posts/hello-world/</link>
+      <link>http://localhost:56919/zh-tw/posts/hello-world/</link>
       <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:56539/zh-tw/posts/hello-world/</guid>
+      <guid>http://localhost:56919/zh-tw/posts/hello-world/</guid>
       <description>歡迎來到我關於網路安全和人工智慧的新部落格。</description>
       
     </item>

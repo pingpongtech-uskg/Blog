@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VS Code on PingPongTech</title>
-    <link>http://localhost:56539/tags/vs-code/</link>
+    <link>http://localhost:56919/tags/vs-code/</link>
     <description>Recent content in VS Code on PingPongTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56539/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56919/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Top 10 VS Code Extensions for DevOps</title>
-      <link>http://localhost:56539/posts/top-10-vs-code-extensions-for-devops/</link>
+      <link>http://localhost:56919/posts/top-10-vs-code-extensions-for-devops/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:56539/posts/top-10-vs-code-extensions-for-devops/</guid>
+      <guid>http://localhost:56919/posts/top-10-vs-code-extensions-for-devops/</guid>
       <description>A pseudo article about Top 10 VS Code Extensions for DevOps.</description>
       
     </item>

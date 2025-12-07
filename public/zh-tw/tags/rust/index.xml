@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rust on PingPongTech (TW)</title>
-    <link>http://localhost:56539/zh-tw/tags/rust/</link>
+    <link>http://localhost:56919/zh-tw/tags/rust/</link>
     <description>Recent content in Rust on PingPongTech (TW)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56539/zh-tw/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:56919/zh-tw/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>給 Python 開發者的 Rust 入門</title>
-      <link>http://localhost:56539/zh-tw/posts/introduction-to-rust-for-python-developers/</link>
+      <link>http://localhost:56919/zh-tw/posts/introduction-to-rust-for-python-developers/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:56539/zh-tw/posts/introduction-to-rust-for-python-developers/</guid>
+      <guid>http://localhost:56919/zh-tw/posts/introduction-to-rust-for-python-developers/</guid>
       <description>關於給 Python 開發者的 Rust 入門的文章。</description>
       
     </item>
