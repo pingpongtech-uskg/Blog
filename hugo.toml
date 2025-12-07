@@ -1,0 +1,114 @@
+baseURL = "https://blog.pingpongtech.us.kg/"
+languageCode = "en-us"
+title = "PingPongTech"
+theme = "blowfish"
+defaultContentLanguage = "en"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  colorScheme = "blowfish"
+  defaultTheme = "dark"
+  enableSearch = true
+  fuse = true # Enable Fuse.js for search
+
+  # Homepage setup
+  [params.homepage]
+    layout = "background" 
+    showRecent = true
+    recentLimit = 6
+    
+  [params.article]
+    showDate = true
+    showViews = true
+    showLikes = false
+    showReadingTime = true
+    showWordCount = false
+
+  [params.footer]
+    showScrollToTop = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "PingPongTech"
+    weight = 1
+    contentDir = "content/en"
+    [languages.en.params]
+      displayName = "EN"
+      isoCode = "en"
+      # Footer menus
+      footer = ["About", "Blog", "Tags"]
+
+  [languages.ja]
+    languageName = "Japanese"
+    title = "PingPongTech (JP)"
+    weight = 2
+    contentDir = "content/ja"
+    [languages.ja.params]
+      displayName = "JA"
+      isoCode = "ja"
+
+  [languages.zh-tw]
+    languageName = "Traditional Chinese"
+    title = "PingPongTech (TW)"
+    weight = 3
+    contentDir = "content/zh-tw"
+    [languages.zh-tw.params]
+      displayName = "ZH"
+      isoCode = "zh-kw"
+
+[menu]
+  # Main Menu (Header)
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About Me"
+    url = "/about/"
+    weight = 20
+
+  # Footer Socials
+  [[menu.social]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/"
+    weight = 10
+    params = { icon = "github" }
+  [[menu.social]]
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://linkedin.com/"
+    weight = 20
+    params = { icon = "linkedin" }
+  [[menu.social]]
+    identifier = "twitter"
+    name = "X"
+    url = "https://x.com/"
+    weight = 30
+    params = { icon = "twitter" }
+  [[menu.social]]
+    identifier = "threads"
+    name = "Threads"
+    url = "https://threads.net/"
+    weight = 40
+    params = { icon = "instagram" }
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+# Privacy
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false

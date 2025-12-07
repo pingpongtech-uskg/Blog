@@ -1,0 +1,28 @@
+/* Custom CSS to force 3-column grid on desktop */
+
+/* 
+   Blowfish uses Tailwind, but we can override the article list container.
+   Assuming a standard class structure, we target the article list wrapper.
+   Note: Class names might vary by Blowfish version, but using generic grid syntax usually works 
+   if we target the correct semantic elements or common classes.
+*/
+
+@media (min-width: 1024px) {
+  /* Target the list container. 
+     In Blowfish, this is often a section or div with class 'grid' inside the list templates.
+     We'll try to target it broadly but safely. 
+  */
+  
+  .article-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* Ensure images cover the area nicely */
+.article-list img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover;
+}
