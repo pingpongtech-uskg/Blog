@@ -15,7 +15,7 @@
 
   .article-list {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
     gap: 1.5rem !important;
   }
 }
@@ -53,13 +53,13 @@ article.max-w-prose {
 nav img.logo,
 /* Assuming there might be a specific class, or generic nav img */
 nav a.flex img {
-  height: 3rem !important;
+  height: 40px !important;
   /* Adjust to match text size approx */
   width: auto !important;
 }
 
 /* Specific fix for Blowfish header logo if it's just an img in the first link of nav */
 header nav a:first-child img {
-  max-height: 2.5rem !important;
+  max-height: 40px !important;
   width: auto !important;
 }

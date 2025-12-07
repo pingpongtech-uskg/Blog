@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Future on PingPongTech</title>
-    <link>http://localhost:53846/tags/future/</link>
+    <link>http://localhost:54096/tags/future/</link>
     <description>Recent content in Future on PingPongTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53846/tags/future/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:54096/tags/future/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Future of AI Agents</title>
-      <link>http://localhost:53846/posts/the-future-of-ai-agents/</link>
+      <link>http://localhost:54096/posts/the-future-of-ai-agents/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53846/posts/the-future-of-ai-agents/</guid>
+      <guid>http://localhost:54096/posts/the-future-of-ai-agents/</guid>
       <description>A pseudo article about The Future of AI Agents.</description>
       
     </item>
