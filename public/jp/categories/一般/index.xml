@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>一般 on PingPongTech (JP)</title>
-    <link>http://localhost:1313/jp/categories/%E4%B8%80%E8%88%AC/</link>
+    <link>http://localhost:53555/jp/categories/%E4%B8%80%E8%88%AC/</link>
     <description>Recent content in 一般 on PingPongTech (JP)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/jp/categories/%E4%B8%80%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53555/jp/categories/%E4%B8%80%E8%88%AC/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World: PingPongTechへようこそ</title>
-      <link>http://localhost:1313/jp/posts/hello-world/</link>
+      <link>http://localhost:53555/jp/posts/hello-world/</link>
       <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/hello-world/</guid>
+      <guid>http://localhost:53555/jp/posts/hello-world/</guid>
       <description>サイバーセキュリティとAIに関する新しいブログへようこそ。</description>
       
     </item>

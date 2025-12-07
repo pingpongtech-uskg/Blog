@@ -6,7 +6,7 @@
   },
   "threads": {
     "title": "Threads",
-    "icon": "instagram",
+    "icon": "threads",
     "url": "https://www.threads.net/intent/post?text=%s%%20%s"
   },
   "instagram": {

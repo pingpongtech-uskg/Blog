@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on PingPongTech (JP)</title>
-    <link>http://localhost:1313/jp/posts/</link>
+    <link>http://localhost:53555/jp/posts/</link>
     <description>Recent content in Posts on PingPongTech (JP)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/jp/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53555/jp/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World: PingPongTechへようこそ</title>
-      <link>http://localhost:1313/jp/posts/hello-world/</link>
+      <link>http://localhost:53555/jp/posts/hello-world/</link>
       <pubDate>Fri, 07 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/hello-world/</guid>
+      <guid>http://localhost:53555/jp/posts/hello-world/</guid>
       <description>サイバーセキュリティとAIに関する新しいブログへようこそ。</description>
       
     </item>
     
     <item>
       <title>Python開発者のためのRust入門</title>
-      <link>http://localhost:1313/jp/posts/introduction-to-rust-for-python-developers/</link>
+      <link>http://localhost:53555/jp/posts/introduction-to-rust-for-python-developers/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/introduction-to-rust-for-python-developers/</guid>
+      <guid>http://localhost:53555/jp/posts/introduction-to-rust-for-python-developers/</guid>
       <description>Python開発者のためのRust入門に関する記事です。</description>
       
     </item>
     
     <item>
       <title>クラウドインフラを保護する方法</title>
-      <link>http://localhost:1313/jp/posts/how-to-secure-your-cloud-infrastructure/</link>
+      <link>http://localhost:53555/jp/posts/how-to-secure-your-cloud-infrastructure/</link>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/how-to-secure-your-cloud-infrastructure/</guid>
+      <guid>http://localhost:53555/jp/posts/how-to-secure-your-cloud-infrastructure/</guid>
       <description>クラウドインフラを保護する方法に関する記事です。</description>
       
     </item>
     
     <item>
       <title>DevOps向けVS Code拡張機能トップ10</title>
-      <link>http://localhost:1313/jp/posts/top-10-vs-code-extensions-for-devops/</link>
+      <link>http://localhost:53555/jp/posts/top-10-vs-code-extensions-for-devops/</link>
       <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/top-10-vs-code-extensions-for-devops/</guid>
+      <guid>http://localhost:53555/jp/posts/top-10-vs-code-extensions-for-devops/</guid>
       <description>DevOps向けVS Code拡張機能トップ10に関する記事です。</description>
       
     </item>
     
     <item>
       <title>HugoとJekyllの比較</title>
-      <link>http://localhost:1313/jp/posts/hugo-vs-jekyll-a-comparison/</link>
+      <link>http://localhost:53555/jp/posts/hugo-vs-jekyll-a-comparison/</link>
       <pubDate>Thu, 11 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/hugo-vs-jekyll-a-comparison/</guid>
+      <guid>http://localhost:53555/jp/posts/hugo-vs-jekyll-a-comparison/</guid>
       <description>HugoとJekyllの比較に関する記事です。</description>
       
     </item>
     
     <item>
       <title>ゼロトラストセキュリティを理解する</title>
-      <link>http://localhost:1313/jp/posts/understanding-zero-trust-security/</link>
+      <link>http://localhost:53555/jp/posts/understanding-zero-trust-security/</link>
       <pubDate>Sat, 06 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/understanding-zero-trust-security/</guid>
+      <guid>http://localhost:53555/jp/posts/understanding-zero-trust-security/</guid>
       <description>ゼロトラストセキュリティを理解するに関する記事です。</description>
       
     </item>
     
     <item>
       <title>AIエージェントの未来</title>
-      <link>http://localhost:1313/jp/posts/the-future-of-ai-agents/</link>
+      <link>http://localhost:53555/jp/posts/the-future-of-ai-agents/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/the-future-of-ai-agents/</guid>
+      <guid>http://localhost:53555/jp/posts/the-future-of-ai-agents/</guid>
       <description>AIエージェントの未来に関する記事です。</description>
       
     </item>

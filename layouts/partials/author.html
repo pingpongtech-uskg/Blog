@@ -19,24 +19,11 @@
   {{ end }}
 
   <div class="flex-grow flex flex-col justify-center">
-    <div class="flex items-center justify-between">
-      <div>
-        <div class="font-bold text-lg text-neutral-900 dark:text-neutral-100">
-          Written by {{ .Site.Params.Author.name | default "Author" }}
-        </div>
-        <div class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
-          2.1K followers · 181 following
-        </div>
-      </div>
-      <div>
-        <button
-          class="bg-transparent hover:bg-neutral-100 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-300 font-semibold py-1 px-4 border border-neutral-300 dark:border-neutral-600 rounded-full text-sm transition-colors">
-          Follow
-        </button>
-      </div>
+    <div class="font-bold text-xl text-neutral-900 dark:text-neutral-100 mb-1">
+      {{ .Site.Params.Author.name | default "Author" }}
     </div>
     {{ with .Site.Params.Author.bio | markdownify }}
-    <div class="text-sm text-neutral-700 dark:text-neutral-300 mt-2">{{ . }}</div>
+    <div class="text-base text-neutral-700 dark:text-neutral-300 leading-relaxed">{{ . }}</div>
     {{ end }}
   </div>
 </div>

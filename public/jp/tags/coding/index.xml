@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on PingPongTech (JP)</title>
-    <link>http://localhost:1313/jp/tags/coding/</link>
+    <link>http://localhost:53555/jp/tags/coding/</link>
     <description>Recent content in Coding on PingPongTech (JP)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/jp/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53555/jp/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python開発者のためのRust入門</title>
-      <link>http://localhost:1313/jp/posts/introduction-to-rust-for-python-developers/</link>
+      <link>http://localhost:53555/jp/posts/introduction-to-rust-for-python-developers/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/jp/posts/introduction-to-rust-for-python-developers/</guid>
+      <guid>http://localhost:53555/jp/posts/introduction-to-rust-for-python-developers/</guid>
       <description>Python開発者のためのRust入門に関する記事です。</description>
       
     </item>
