@@ -14,9 +14,9 @@ defaultContentLanguageInSubdir = true
   autoSwitchAppearance = false
   enableSearch = true
   enableCodeCopy = true
-  logo = "img/avatar.png"
-  favicon = "favicon.png"
-  images = ["img/avatar.png"]
+  logo = ""
+  favicon = "favicon.ico"
+  images = []
   description = "PingPongTech is a cybersecurity think tank focused on zero trust architecture, critical infrastructure defense, and modern threat analysis."
   mainSections = ["posts", "resources"]
 

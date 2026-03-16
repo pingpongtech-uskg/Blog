@@ -1,15 +1,15 @@
 {{ $lang := .Site.Language.Lang }}
 {{ $heroTitle := "Securing the Digital Frontier." }}
-{{ $heroLead := "PingPongTech is a cybersecurity think tank focused on zero trust architecture, critical infrastructure defense, and the latest threat analysis for resilient digital operations." }}
+{{ $heroLead := "Cybersecurity insight on zero trust, critical infrastructure defense, and practical threat analysis." }}
 {{ $resourcesTitle := "Weekend Resources" }}
 {{ $resourcesCopy := "Only high-value B2B resources: white papers, conference passes, official certification offers, and enterprise reports." }}
 {{ $resourcesLink := "resources/" }}
 {{ if eq $lang "zh-tw" }}
-  {{ $heroLead = "PingPongTech 是專注於零信任架構、關鍵基礎設施防護與最新威脅分析的資安智庫，為企業提供兼具戰略視角與技術深度的洞察。" }}
+  {{ $heroLead = "聚焦零信任、關鍵基礎設施防護與可落地威脅分析的資安洞察。" }}
   {{ $resourcesTitle = "週末資源" }}
   {{ $resourcesCopy = "僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。" }}
 {{ else if eq $lang "ja" }}
-  {{ $heroLead = "PingPongTech は、ゼロトラストアーキテクチャ、重要インフラ防御、最新の脅威分析に特化したサイバーセキュリティ・シンクタンクです。" }}
+  {{ $heroLead = "ゼロトラスト、重要インフラ防御、実践的な脅威分析にフォーカスしたサイバーセキュリティ洞察。" }}
   {{ $resourcesTitle = "週末リソース" }}
   {{ $resourcesCopy = "高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。" }}
 {{ end }}
@@ -19,7 +19,7 @@
   <div class="absolute inset-0 z-10 bg-[radial-gradient(circle_at_top_left,rgba(var(--color-secondary-500),0.22),transparent_28%),linear-gradient(135deg,rgba(var(--color-primary-900),0.95),rgba(2,10,22,0.92))]"></div>
   <div class="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(4,10,20,0.92),rgba(4,10,20,0.72)_50%,rgba(4,10,20,0.38))]"></div>
 
-  <div class="hero-shell relative z-20 container mx-auto w-full max-w-7xl px-6 py-20 lg:px-10">
+  <div class="hero-shell relative z-20 container mx-auto w-full max-w-7xl px-6 py-14 lg:px-10">
     <div class="max-w-3xl rounded-[1.75rem] border border-[rgba(var(--color-secondary-400),0.14)] bg-[rgba(5,15,32,0.58)] p-8 shadow-[0_24px_80px_rgba(0,7,20,0.48)] backdrop-blur-xl lg:p-12 animate-fade-in-up">
       <div class="hero-kicker mb-4">PingPongTech Cybersecurity Think Tank</div>
       <h1 class="mb-6 text-5xl font-black tracking-[-0.04em] text-white md:text-6xl xl:text-7xl">
@@ -33,15 +33,15 @@
         <span class="security-pill">Critical Infrastructure</span>
         <span class="security-pill">Threat Analysis</span>
       </div>
-      <div class="mt-10 flex flex-wrap gap-4">
+      <div class="mt-10 flex flex-wrap gap-3">
         <a href="{{ relLangURL "posts/" }}" class="inline-flex items-center rounded-full bg-[rgb(var(--color-secondary-400))] px-6 py-3 text-sm font-bold text-[rgb(var(--color-primary-900))] transition hover:translate-y-[-1px] hover:bg-[rgb(var(--color-secondary-300))]">
           {{ if eq $lang "zh-tw" }}閱讀文章{{ else if eq $lang "ja" }}記事を読む{{ else }}Explore Articles{{ end }}
         </a>
-        <a href="{{ relLangURL "topic-map/" }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-secondary-400),0.26)] px-6 py-3 text-sm font-semibold text-white transition hover:border-[rgba(var(--color-secondary-300),0.48)] hover:bg-[rgba(var(--color-secondary-400),0.08)]">
-          {{ if eq $lang "zh-tw" }}瀏覽主題地圖{{ else if eq $lang "ja" }}トピックマップを見る{{ else }}Browse Topic Map{{ end }}
+        <a href="{{ relLangURL "topic-map/" }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-neutral-200),0.28)] px-5 py-2.5 text-sm font-medium text-[rgb(var(--color-neutral-200))] transition hover:border-[rgba(var(--color-neutral-100),0.45)] hover:text-white">
+          {{ if eq $lang "zh-tw" }}主題地圖{{ else if eq $lang "ja" }}トピック{{ else }}Topic Map{{ end }}
         </a>
-        <a href="{{ $resourcesLink | relLangURL }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-secondary-400),0.26)] px-6 py-3 text-sm font-semibold text-white transition hover:border-[rgba(var(--color-secondary-300),0.48)] hover:bg-[rgba(var(--color-secondary-400),0.08)]">
-          {{ if eq $lang "zh-tw" }}查看資源庫{{ else if eq $lang "ja" }}リソースを見る{{ else }}Browse Resources{{ end }}
+        <a href="{{ $resourcesLink | relLangURL }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-neutral-200),0.22)] px-5 py-2.5 text-sm font-medium text-[rgb(var(--color-neutral-300))] transition hover:border-[rgba(var(--color-neutral-100),0.4)] hover:text-[rgb(var(--color-neutral-100))]">
+          {{ if eq $lang "zh-tw" }}資源{{ else if eq $lang "ja" }}リソース{{ else }}Resources{{ end }}
         </a>
       </div>
     </div>
@@ -206,3 +206,4 @@
 <section id="recent-articles-list-container">
   {{ partial "recent-articles/main.html" . }}
 </section>
+ction>
