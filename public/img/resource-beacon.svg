@@ -1,0 +1,25 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="40" fill="url(#bg)"/>
+  <circle cx="521" cy="165" r="112" fill="url(#pulse)" fill-opacity="0.35"/>
+  <circle cx="521" cy="165" r="62" fill="#10263A" stroke="#FFB366" stroke-width="4"/>
+  <path d="M521 98V231" stroke="#FFB366" stroke-width="3" stroke-linecap="round"/>
+  <path d="M454 165H587" stroke="#FFB366" stroke-width="3" stroke-linecap="round"/>
+  <rect x="89" y="116" width="254" height="292" rx="28" fill="#102134" stroke="#244A66"/>
+  <rect x="118" y="154" width="124" height="14" rx="7" fill="#6EE7D4" fill-opacity="0.75"/>
+  <rect x="118" y="183" width="176" height="10" rx="5" fill="#9AB4C3" fill-opacity="0.58"/>
+  <rect x="118" y="208" width="158" height="10" rx="5" fill="#9AB4C3" fill-opacity="0.58"/>
+  <rect x="118" y="258" width="192" height="62" rx="18" fill="#0C1A29" stroke="#244A66"/>
+  <text x="137" y="297" fill="#E7F1F7" font-family="IBM Plex Sans, sans-serif" font-size="18">Whitepaper</text>
+  <rect x="118" y="337" width="192" height="38" rx="19" fill="#1A2A3B"/>
+  <text x="146" y="362" fill="#FFB366" font-family="IBM Plex Sans, sans-serif" font-size="16" letter-spacing="0.14em">WEEKEND</text>
+  <defs>
+    <linearGradient id="bg" x1="53" y1="37" x2="659" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1C2C"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(521 165) rotate(90) scale(112)">
+      <stop stop-color="#FFB366"/>
+      <stop offset="1" stop-color="#FFB366" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

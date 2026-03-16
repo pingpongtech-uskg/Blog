@@ -1,0 +1,32 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import { localizePath } from "../lib/i18n";
+import type { Language } from "../config/site";
+import { siteCopy } from "../data/copy";
+
+const {
+  lang,
+  pathname
+} = Astro.props as {
+  lang: Language;
+  pathname: string;
+};
+
+const copy = siteCopy[lang];
+---
+
+<header class="site-header">
+  <div class="shell nav-shell">
+    <a class="brandmark" href={localizePath(lang, "home")}>
+      <span class="brandmark-kicker">PingPongTech</span>
+      <span class="brandmark-title">{copy.brandDescriptor}</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href={localizePath(lang, "articles")}>{copy.nav.articles}</a>
+      <a href={localizePath(lang, "topics")}>{copy.nav.topics}</a>
+      <a href={localizePath(lang, "resources")}>{copy.nav.resources}</a>
+      <a href={localizePath(lang, "about")}>{copy.nav.about}</a>
+    </nav>
+    <LanguageSwitcher pathname={pathname} currentLang={lang} />
+  </div>
+</header>

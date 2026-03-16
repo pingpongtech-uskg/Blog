@@ -1,0 +1,21 @@
+---
+const {
+  href,
+  title,
+  description,
+  meta,
+  delay = 0
+} = Astro.props as {
+  href: string;
+  title: string;
+  description: string;
+  meta?: string;
+  delay?: number;
+};
+---
+
+<a href={href} class="content-card" data-reveal="up" style={`--reveal-delay: ${delay}ms;`}>
+  {meta && <p class="content-card-meta">{meta}</p>}
+  <h3>{title}</h3>
+  <p>{description}</p>
+</a>

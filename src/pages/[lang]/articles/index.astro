@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ContentCard from "../../../components/ContentCard.astro";
+import PageLead from "../../../components/PageLead.astro";
+import { getLocalizedSlug, getTranslatedEntries, isLanguage } from "../../../lib/i18n";
+import { languages } from "../../../config/site";
+import { siteCopy } from "../../../data/copy";
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({
+    params: { lang }
+  }));
+}
+
+const { lang } = Astro.params;
+
+if (!lang || !isLanguage(lang)) {
+  return Astro.redirect("/en/articles/");
+}
+
+const articles = await getTranslatedEntries("articles", lang);
+const copy = siteCopy[lang].pages.articles;
+---
+
+<BaseLayout title={`${copy.title} | PingPongTech`} description={copy.body}>
+  <PageLead {...copy} />
+  <section class="shell card-grid">
+    {articles.map((article) => (
+      <ContentCard href={`/${lang}/articles/${getLocalizedSlug(article.slug)}/`} title={article.data.title} description={article.data.description} meta={`${article.data.category} · ${article.data.readingTime}`} />
+    ))}
+  </section>
+</BaseLayout>

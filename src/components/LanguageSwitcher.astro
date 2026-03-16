@@ -1,0 +1,24 @@
+---
+import { buildLanguageLinks } from "../lib/i18n";
+import type { Language } from "../config/site";
+
+const {
+  pathname = "/",
+  currentLang,
+  links
+} = Astro.props as {
+  pathname?: string;
+  currentLang: Language;
+  links?: Array<{ lang: Language; label: string; href: string }>;
+};
+
+const languageLinks = links ?? buildLanguageLinks(pathname);
+---
+
+<div class="language-switcher" aria-label="Language switcher">
+  {languageLinks.map(({ lang, label, href }) => (
+    <a href={href} class:list={{ active: lang === currentLang }}>
+      {label}
+    </a>
+  ))}
+</div>

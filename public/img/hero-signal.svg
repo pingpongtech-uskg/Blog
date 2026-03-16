@@ -1,0 +1,32 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="720" rx="48" fill="url(#bg)"/>
+  <rect x="32" y="32" width="656" height="656" rx="32" stroke="url(#frame)" stroke-opacity="0.6"/>
+  <circle cx="360" cy="360" r="198" stroke="#6EE7D4" stroke-opacity="0.18"/>
+  <circle cx="360" cy="360" r="146" stroke="#6EE7D4" stroke-opacity="0.22"/>
+  <circle cx="360" cy="360" r="94" stroke="#6EE7D4" stroke-opacity="0.26"/>
+  <path d="M178 442C224 404 291 374 358 362C423 351 497 359 549 386" stroke="#6EE7D4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M209 280C256 306 318 317 378 310C434 303 490 279 527 244" stroke="#8CC8FF" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.9"/>
+  <circle cx="276" cy="314" r="10" fill="#07111F" stroke="#8CC8FF" stroke-width="4"/>
+  <circle cx="438" cy="296" r="10" fill="#07111F" stroke="#6EE7D4" stroke-width="4"/>
+  <circle cx="515" cy="383" r="10" fill="#07111F" stroke="#FFB366" stroke-width="4"/>
+  <circle cx="329" cy="422" r="10" fill="#07111F" stroke="#6EE7D4" stroke-width="4"/>
+  <rect x="96" y="104" width="132" height="44" rx="22" fill="#0F2234" stroke="#6EE7D4" stroke-opacity="0.4"/>
+  <rect x="246" y="104" width="150" height="44" rx="22" fill="#0F2234" stroke="#8CC8FF" stroke-opacity="0.4"/>
+  <rect x="414" y="104" width="128" height="44" rx="22" fill="#0F2234" stroke="#FFB366" stroke-opacity="0.4"/>
+  <text x="128" y="132" fill="#DCEAF1" font-family="IBM Plex Sans, sans-serif" font-size="20" letter-spacing="0.08em">EN</text>
+  <text x="278" y="132" fill="#DCEAF1" font-family="IBM Plex Sans, sans-serif" font-size="20">繁體中文</text>
+  <text x="445" y="132" fill="#DCEAF1" font-family="IBM Plex Sans, sans-serif" font-size="20">日本語</text>
+  <rect x="96" y="548" width="528" height="96" rx="24" fill="#0A1827" fill-opacity="0.78" stroke="#26465F"/>
+  <text x="128" y="586" fill="#6EE7D4" font-family="IBM Plex Sans, sans-serif" font-size="16" letter-spacing="0.2em">EDITORIAL SYSTEM</text>
+  <text x="128" y="622" fill="#E7F1F7" font-family="Space Grotesk, IBM Plex Sans, sans-serif" font-size="28">Signals, structure, and multilingual clarity.</text>
+  <defs>
+    <linearGradient id="bg" x1="73" y1="52" x2="665" y2="685" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1B2B"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="64" y1="68" x2="678" y2="661" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7D4"/>
+      <stop offset="1" stop-color="#8CC8FF" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+</svg>

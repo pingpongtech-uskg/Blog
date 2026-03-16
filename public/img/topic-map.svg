@@ -1,0 +1,26 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="40" fill="url(#bg)"/>
+  <path d="M146 127H294" stroke="#6EE7D4" stroke-width="2.5" stroke-opacity="0.45"/>
+  <path d="M294 127H431L559 223" stroke="#8CC8FF" stroke-width="2.5" stroke-opacity="0.45"/>
+  <path d="M294 127V263L167 366" stroke="#6EE7D4" stroke-width="2.5" stroke-opacity="0.45"/>
+  <path d="M294 263H454L571 371" stroke="#FFB366" stroke-width="2.5" stroke-opacity="0.5"/>
+  <circle cx="146" cy="127" r="16" fill="#0B1624" stroke="#6EE7D4" stroke-width="4"/>
+  <circle cx="294" cy="127" r="18" fill="#0B1624" stroke="#8CC8FF" stroke-width="4"/>
+  <circle cx="559" cy="223" r="16" fill="#0B1624" stroke="#6EE7D4" stroke-width="4"/>
+  <circle cx="167" cy="366" r="16" fill="#0B1624" stroke="#8CC8FF" stroke-width="4"/>
+  <circle cx="294" cy="263" r="18" fill="#0B1624" stroke="#6EE7D4" stroke-width="4"/>
+  <circle cx="454" cy="263" r="16" fill="#0B1624" stroke="#FFB366" stroke-width="4"/>
+  <circle cx="571" cy="371" r="16" fill="#0B1624" stroke="#6EE7D4" stroke-width="4"/>
+  <rect x="85" y="78" width="110" height="34" rx="17" fill="#112335" stroke="#6EE7D4" stroke-opacity="0.3"/>
+  <rect x="247" y="79" width="132" height="34" rx="17" fill="#112335" stroke="#8CC8FF" stroke-opacity="0.3"/>
+  <rect x="503" y="176" width="138" height="34" rx="17" fill="#112335" stroke="#6EE7D4" stroke-opacity="0.3"/>
+  <text x="106" y="100" fill="#DCEAF1" font-family="IBM Plex Sans, sans-serif" font-size="15" letter-spacing="0.12em">IDENTITY</text>
+  <text x="272" y="101" fill="#DCEAF1" font-family="IBM Plex Sans, sans-serif" font-size="15" letter-spacing="0.12em">ARCHITECTURE</text>
+  <text x="528" y="198" fill="#DCEAF1" font-family="IBM Plex Sans, sans-serif" font-size="15" letter-spacing="0.12em">AI RISK</text>
+  <defs>
+    <linearGradient id="bg" x1="42" y1="27" x2="665" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1A2A"/>
+      <stop offset="1" stop-color="#08111F"/>
+    </linearGradient>
+  </defs>
+</svg>

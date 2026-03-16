@@ -1,0 +1,14 @@
+---
+const { eyebrow, title, body, delay = 0 } = Astro.props as {
+  eyebrow?: string;
+  title: string;
+  body?: string;
+  delay?: number;
+};
+---
+
+<div class="section-heading" data-reveal="up" style={`--reveal-delay: ${delay}ms;`}>
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <h2>{title}</h2>
+  {body && <p class="section-body">{body}</p>}
+</div>

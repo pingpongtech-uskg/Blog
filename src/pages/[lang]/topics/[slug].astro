@@ -1,0 +1,44 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ContentCard from "../../../components/ContentCard.astro";
+import LanguageSwitcher from "../../../components/LanguageSwitcher.astro";
+import TranslationStatus from "../../../components/TranslationStatus.astro";
+import { getEntryLanguageLinks, getLocalizedSlug, getTranslationState } from "../../../lib/i18n";
+import { siteCopy } from "../../../data/copy";
+
+export async function getStaticPaths() {
+  const topics = await getCollection("topics");
+  return topics.map((entry) => ({
+    params: { lang: entry.data.lang, slug: getLocalizedSlug(entry.slug) },
+    props: { entry }
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const translationState = await getTranslationState("topics", entry.data.translationKey);
+const languageLinks = await getEntryLanguageLinks("topics", entry.data.translationKey);
+const copy = siteCopy[entry.data.lang];
+
+const relatedArticles = (await getCollection("articles", ({ data }) => !data.draft && data.lang === entry.data.lang && data.topic === entry.data.translationKey)).slice(0, 3);
+---
+
+<BaseLayout title={`${entry.data.title} | PingPongTech`} description={entry.data.description}>
+  <article class="shell article-layout prose-block">
+    <p class="eyebrow">{copy.pages.topics.eyebrow}</p>
+    <h1>{entry.data.title}</h1>
+    <p class="article-summary">{entry.data.description}</p>
+    <LanguageSwitcher currentLang={entry.data.lang} links={languageLinks} />
+    <TranslationStatus currentLang={entry.data.lang} available={translationState.available} missing={translationState.missing} />
+    <Content />
+    <section class="related-block">
+      <h2>{copy.common.relatedInsights}</h2>
+      <div class="card-grid">
+        {relatedArticles.map((article) => (
+          <ContentCard href={`/${entry.data.lang}/articles/${getLocalizedSlug(article.slug)}/`} title={article.data.title} description={article.data.description} meta={`${article.data.category} · ${article.data.readingTime}`} />
+        ))}
+      </div>
+    </section>
+  </article>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+const {
+  eyebrow,
+  title,
+  body,
+  panelTitle,
+  panelBody,
+  panelPoints,
+  image,
+  imageAlt
+} = Astro.props as {
+  eyebrow: string;
+  title: string;
+  body: string;
+  panelTitle: string;
+  panelBody: string;
+  panelPoints: string[];
+  image: string;
+  imageAlt: string;
+};
+---
+
+<section class="shell page-hero">
+  <div class="page-hero-copy" data-reveal="left" style="--reveal-delay: 0ms;">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{title}</h1>
+    <p class="hero-body">{body}</p>
+  </div>
+  <aside class="page-hero-aside" data-reveal="right" style="--reveal-delay: 120ms;">
+    <div class="page-hero-art">
+      <img src={image} alt={imageAlt} loading="eager" data-parallax />
+    </div>
+    <div class="page-hero-panel-copy">
+      <h2>{panelTitle}</h2>
+      <p>{panelBody}</p>
+      <ul class="signal-list">
+        {panelPoints.map((point) => (
+          <li>{point}</li>
+        ))}
+      </ul>
+    </div>
+  </aside>
+</section>

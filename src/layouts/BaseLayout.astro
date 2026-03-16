@@ -1,0 +1,92 @@
+---
+import Nav from "../components/Nav.astro";
+import { getLangFromUrl } from "../lib/i18n";
+
+const {
+  title = "PingPongTech",
+  description = "Cybersecurity insight for modern organizations."
+} = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <script is:inline>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <div class="page-frame"></div>
+    <Nav lang={lang} pathname={Astro.url.pathname} />
+    <main>
+      <slot />
+    </main>
+    <script is:inline>
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const revealElements = Array.from(document.querySelectorAll("[data-reveal]"));
+
+      if (prefersReducedMotion) {
+        revealElements.forEach((element) => element.classList.add("is-visible"));
+      } else {
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) {
+                return;
+              }
+
+              const element = entry.target;
+              const delay = Number.parseInt(element.style.getPropertyValue("--reveal-delay"), 10) || 0;
+
+              window.setTimeout(() => {
+                element.classList.add("is-visible");
+              }, delay);
+
+              revealObserver.unobserve(element);
+            });
+          },
+          {
+            threshold: 0.18,
+            rootMargin: "0px 0px -8% 0px"
+          }
+        );
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+
+        const parallaxElements = Array.from(document.querySelectorAll("[data-parallax]"));
+        let rafId = 0;
+
+        const updateParallax = () => {
+          rafId = 0;
+          const viewportHeight = window.innerHeight;
+
+          parallaxElements.forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            const progress = Math.max(-1, Math.min(1, (viewportHeight * 0.55 - rect.top) / viewportHeight));
+            element.style.setProperty("--parallax-shift", `${progress * 18}px`);
+          });
+        };
+
+        const requestParallax = () => {
+          if (!rafId) {
+            rafId = window.requestAnimationFrame(updateParallax);
+          }
+        };
+
+        updateParallax();
+        window.addEventListener("scroll", requestParallax, { passive: true });
+        window.addEventListener("resize", requestParallax);
+      }
+    </script>
+  </body>
+</html>

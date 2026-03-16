@@ -1,0 +1,32 @@
+---
+import { getMissingTranslationMessage, languageLabels } from "../lib/i18n";
+import type { Language } from "../config/site";
+import { siteCopy } from "../data/copy";
+
+const {
+  currentLang,
+  available,
+  missing
+} = Astro.props as {
+  currentLang: Language;
+  available: Language[];
+  missing: Language[];
+};
+
+const copy = siteCopy[currentLang];
+---
+
+<section class="translation-status" data-reveal="up" style="--reveal-delay: 40ms;">
+  <div>
+    <p class="eyebrow">{copy.common.languageAvailability}</p>
+    <div class="translation-pills">
+      {available.map((lang) => (
+        <span class="translation-pill active">{languageLabels[lang]}</span>
+      ))}
+      {missing.map((lang) => (
+        <span class="translation-pill">{languageLabels[lang]}</span>
+      ))}
+    </div>
+  </div>
+  {missing.length > 0 && <p>{getMissingTranslationMessage(currentLang)}</p>}
+</section>
