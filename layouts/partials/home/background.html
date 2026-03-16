@@ -19,13 +19,13 @@
   <div class="absolute inset-0 z-10 bg-[radial-gradient(circle_at_top_left,rgba(var(--color-secondary-500),0.22),transparent_28%),linear-gradient(135deg,rgba(var(--color-primary-900),0.95),rgba(2,10,22,0.92))]"></div>
   <div class="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(4,10,20,0.92),rgba(4,10,20,0.72)_50%,rgba(4,10,20,0.38))]"></div>
 
-  <div class="hero-shell relative z-20 container mx-auto grid w-full max-w-7xl grid-cols-1 gap-10 px-6 py-20 lg:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.85fr)] lg:items-center lg:px-10">
+  <div class="hero-shell relative z-20 container mx-auto w-full max-w-7xl px-6 py-20 lg:px-10">
     <div class="max-w-3xl rounded-[1.75rem] border border-[rgba(var(--color-secondary-400),0.14)] bg-[rgba(5,15,32,0.58)] p-8 shadow-[0_24px_80px_rgba(0,7,20,0.48)] backdrop-blur-xl lg:p-12 animate-fade-in-up">
       <div class="hero-kicker mb-4">PingPongTech Cybersecurity Think Tank</div>
       <h1 class="mb-6 text-5xl font-black tracking-[-0.04em] text-white md:text-6xl xl:text-7xl">
         {{ $heroTitle }}
       </h1>
-      <p class="max-w-2xl text-lg leading-8 text-[rgb(var(--color-neutral-200))] md:text-xl">
+      <p class="max-w-2xl text-lg leading-8 text-[rgb(var(--color-neutral-100))] md:text-xl">
         {{ $heroLead }}
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
@@ -46,26 +46,6 @@
       </div>
     </div>
 
-    <aside class="resources-panel relative overflow-hidden p-8 text-white lg:p-10 animate-fade-in-up-delayed">
-      <div class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[rgb(var(--color-secondary-300))]">{{ $resourcesTitle }}</div>
-      <h2 class="mb-4 text-2xl font-bold">{{ if eq $lang "zh-tw" }}給企業決策者與防禦團隊的精選內容{{ else if eq $lang "ja" }}意思決定者と防御チームのための精選コンテンツ{{ else }}High-value intelligence for B2B security teams{{ end }}</h2>
-      <p class="mb-6 text-[rgb(var(--color-neutral-200))] leading-7">{{ $resourcesCopy }}</p>
-      <div class="space-y-4 text-sm leading-6 text-[rgb(var(--color-neutral-200))]">
-        <div class="rounded-2xl border border-[rgba(var(--color-secondary-400),0.12)] bg-[rgba(255,255,255,0.03)] p-4">
-          <div class="mb-1 font-semibold text-white">{{ if eq $lang "zh-tw" }}戰略白皮書{{ else if eq $lang "ja" }}戦略ホワイトペーパー{{ else }}Strategic White Papers{{ end }}</div>
-          <div>{{ if eq $lang "zh-tw" }}聚焦零信任成熟度、治理藍圖與風險優先順序。{{ else if eq $lang "ja" }}ゼロトラスト成熟度、ガバナンス設計、リスク優先順位にフォーカス。{{ else }}Zero trust maturity, governance blueprints, and prioritized risk mitigation.{{ end }}</div>
-        </div>
-        <div class="rounded-2xl border border-[rgba(var(--color-secondary-400),0.12)] bg-[rgba(255,255,255,0.03)] p-4">
-          <div class="mb-1 font-semibold text-white">{{ if eq $lang "zh-tw" }}產業防護報告{{ else if eq $lang "ja" }}業界防御レポート{{ else }}Sector Defense Reports{{ end }}</div>
-          <div>{{ if eq $lang "zh-tw" }}針對關鍵基礎設施與高風險產業的攻防趨勢整理。{{ else if eq $lang "ja" }}重要インフラや高リスク業界向けの攻防トレンドを整理。{{ else }}Threat and defense trends tailored to critical infrastructure and high-risk sectors.{{ end }}</div>
-        </div>
-      </div>
-      <div class="mt-6">
-        <a href="{{ $resourcesLink | relLangURL }}" class="text-sm font-semibold text-[rgb(var(--color-secondary-300))] hover:text-[rgb(var(--color-secondary-200))]">
-          {{ if eq $lang "zh-tw" }}前往 Resources →{{ else if eq $lang "ja" }}リソースへ →{{ else }}Visit Resources →{{ end }}
-        </a>
-      </div>
-    </aside>
   </div>
 </div>
 

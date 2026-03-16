@@ -90,7 +90,7 @@ defaultContentLanguageInSubdir = true
     languageCode = "ja-JP"
     weight = 3
     [languages.ja.params]
-      displayName = "JP"
+      displayName = "日本語"
       isoCode = "ja-JP"
       dateFormat = "2006年1月2日"
 
