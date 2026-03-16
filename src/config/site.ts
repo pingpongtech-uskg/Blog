@@ -2,7 +2,7 @@ export const languages = ["en", "zh-tw", "ja"] as const;
 
 export type Language = (typeof languages)[number];
 
-export const defaultLanguage: Language = "en";
+export const defaultLanguage: Language = "zh-tw";
 
 export const languageLabels: Record<Language, string> = {
   en: "English",
