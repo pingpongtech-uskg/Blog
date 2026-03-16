@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PingPongTech - Brand Preview</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-soft: #101a2d;
+      --card: #111f36;
+      --line: rgba(94, 234, 212, 0.18);
+      --text: #e6eefc;
+      --muted: #94a3b8;
+      --accent: #2dd4bf;
+      --accent-2: #22d3ee;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Noto Sans TC", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+      background: radial-gradient(1200px 700px at 80% -10%, #13304f 0%, transparent 60%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+      background: rgba(11, 18, 32, 0.72);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand { font-weight: 700; letter-spacing: .4px; }
+    .lang {
+      color: var(--muted);
+      font-size: 14px;
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      border-radius: 10px;
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 84px 20px 52px;
+      position: relative;
+      overflow: hidden;
+    }
+    .pulse {
+      position: absolute;
+      width: 460px;
+      height: 460px;
+      right: -120px;
+      top: -140px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      animation: breathe 7s ease-in-out infinite;
+      opacity: .45;
+    }
+    @keyframes breathe {
+      0%,100% { transform: scale(1); opacity:.35; }
+      50% { transform: scale(1.08); opacity:.6; }
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 62px);
+      line-height: 1.08;
+      letter-spacing: -1px;
+      max-width: 880px;
+    }
+    .sub {
+      margin-top: 16px;
+      color: var(--muted);
+      max-width: 780px;
+      font-size: clamp(15px, 2.2vw, 19px);
+    }
+    .cta {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all .2s ease;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .btn.primary {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #041018;
+      border: 0;
+      font-weight: 700;
+    }
+    .btn:hover { transform: translateY(-2px); }
+
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 20px 48px;
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(17,31,54,.85), rgba(17,31,54,.65));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(45,212,191,.55);
+    }
+    .card .kicker { color: var(--accent); font-size: 12px; }
+    .card h3 { margin: 8px 0 10px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .news {
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      padding: 18px 20px 40px;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">PingPongTech</div>
+      <div class="lang">EN / 繁中 / 日本語</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="pulse"></div>
+    <span class="badge">Cybersecurity Research & Advisory</span>
+    <h1>Securing the Digital Frontier.</h1>
+    <p class="sub">
+      PingPongTech 專注於零信任架構、關鍵基礎設施防護與威脅分析，
+      以研究導向內容協助企業打造可持續的資安韌性。
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="#">探索研究文章</a>
+      <a class="btn" href="#">瀏覽主題地圖</a>
+      <a class="btn" href="#">訂閱 Weekly Radar</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Topics</h2>
+    <div class="grid">
+      <article class="card"><div class="kicker">Topic</div><h3>Zero Trust Architecture</h3><p>架構設計、分段策略、身分與裝置信任模型。</p></article>
+      <article class="card"><div class="kicker">Topic</div><h3>Critical Infrastructure Security</h3><p>OT/IT 交界風險、保護策略與營運韌性。</p></article>
+      <article class="card"><div class="kicker">Topic</div><h3>Threat Intelligence</h3><p>事件脈絡、攻擊路徑、可行防禦建議。</p></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Weekend Resources（附屬專欄）</h2>
+    <div class="news">僅收錄高價值 B2B 資源：白皮書、研究報告、官方認證優惠、頂級會議票務與直播資訊。</div>
+    <div class="grid" style="margin-top:12px;">
+      <article class="card"><div class="kicker">Resource</div><h3>SANS 白皮書限時解鎖</h3><p>聚焦 SOC 偵測成熟度與 MITRE ATT&CK 落地。</p></article>
+      <article class="card"><div class="kicker">Resource</div><h3>Cloud Security 認證券</h3><p>AWS/Azure/GCP 官方活動與考試優惠。</p></article>
+      <article class="card"><div class="kicker">Resource</div><h3>Conference Radar</h3><p>Black Hat / RSA / regional summit 的早鳥與直播資訊。</p></article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Preview only — 靜態網站方向原型（深色專業 + 克制動效 + 智庫導向內容結構）
+  </footer>
+</body>
+</html>
