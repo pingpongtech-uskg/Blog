@@ -1,0 +1,47 @@
+[global]
+language = "EN"
+
+[home.hero.kicker]
+other = "PingPongTech Cybersecurity Think Tank"
+
+[home.hero.title]
+other = "Securing the Digital Frontier."
+
+[home.hero.lead]
+other = "Cybersecurity insight on zero trust, critical infrastructure defense, and practical threat analysis."
+
+[home.cta.articles]
+other = "Explore Articles"
+
+[home.cta.topicMap]
+other = "Topic Map"
+
+[home.cta.resources]
+other = "Resources"
+
+[home.topics.title]
+other = "Featured Topics"
+
+[home.topics.zeroTrust.desc]
+other = "Identity, device trust, segmentation, and access governance."
+
+[home.topics.criticalInfra.desc]
+other = "OT/IT boundary risk, hardening strategy, and operational resilience."
+
+[home.topics.threatIntel.desc]
+other = "Attack context, kill chain mapping, and practical mitigation guidance."
+
+[home.resources.title]
+other = "Weekend Resources (Secondary Column)"
+
+[home.resources.note]
+other = "Only high-value B2B resources: white papers, conference passes, official certification offers, and enterprise reports."
+
+[home.resources.sans.desc]
+other = "SOC maturity and MITRE ATT&CK operationalization insights."
+
+[home.resources.voucher.desc]
+other = "AWS/Azure/GCP official event and certification promotions."
+
+[home.resources.conference.desc]
+other = "Black Hat / RSA / regional summit early-bird and streaming access."

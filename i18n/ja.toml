@@ -1,2 +1,47 @@
 [global]
-  language = "JP"
+language = "日本語"
+
+[home.hero.kicker]
+other = "PingPongTech サイバーセキュリティ・シンクタンク"
+
+[home.hero.title]
+other = "Securing the Digital Frontier."
+
+[home.hero.lead]
+other = "ゼロトラスト、重要インフラ防御、実践的な脅威分析にフォーカスしたサイバーセキュリティ洞察。"
+
+[home.cta.articles]
+other = "記事を読む"
+
+[home.cta.topicMap]
+other = "トピック"
+
+[home.cta.resources]
+other = "リソース"
+
+[home.topics.title]
+other = "注目トピック"
+
+[home.topics.zeroTrust.desc]
+other = "ID・デバイス信頼・セグメンテーション・アクセス統制。"
+
+[home.topics.criticalInfra.desc]
+other = "OT/IT 境界リスク、ハードニング、運用レジリエンス。"
+
+[home.topics.threatIntel.desc]
+other = "攻撃コンテキスト、キルチェーン分析、実践的な緩和策。"
+
+[home.resources.title]
+other = "週末リソース（サブコラム）"
+
+[home.resources.note]
+other = "高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。"
+
+[home.resources.sans.desc]
+other = "SOC 成熟度と MITRE ATT&CK 実装の示唆。"
+
+[home.resources.voucher.desc]
+other = "AWS/Azure/GCP 公式イベント・認定特典。"
+
+[home.resources.conference.desc]
+other = "Black Hat / RSA / 地域サミットの早期登録と配信情報。"

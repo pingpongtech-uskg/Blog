@@ -1,0 +1,47 @@
+[global]
+language = "繁中"
+
+[home.hero.kicker]
+other = "PingPongTech 資安智庫"
+
+[home.hero.title]
+other = "Securing the Digital Frontier."
+
+[home.hero.lead]
+other = "聚焦零信任、關鍵基礎設施防護與可落地威脅分析的資安洞察。"
+
+[home.cta.articles]
+other = "閱讀文章"
+
+[home.cta.topicMap]
+other = "主題地圖"
+
+[home.cta.resources]
+other = "資源"
+
+[home.topics.title]
+other = "精選主題"
+
+[home.topics.zeroTrust.desc]
+other = "身分、裝置信任、分段策略與存取治理。"
+
+[home.topics.criticalInfra.desc]
+other = "OT/IT 邊界風險、加固策略與營運韌性。"
+
+[home.topics.threatIntel.desc]
+other = "攻擊脈絡、攻擊鏈映射與可落地緩解建議。"
+
+[home.resources.title]
+other = "週末資源（附屬專欄）"
+
+[home.resources.note]
+other = "僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。"
+
+[home.resources.sans.desc]
+other = "聚焦 SOC 成熟度與 MITRE ATT&CK 落地洞察。"
+
+[home.resources.voucher.desc]
+other = "AWS/Azure/GCP 官方活動與認證優惠追蹤。"
+
+[home.resources.conference.desc]
+other = "Black Hat / RSA / 區域峰會早鳥與直播資訊。"

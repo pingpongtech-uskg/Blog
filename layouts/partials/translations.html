@@ -2,7 +2,7 @@
 <div class="ppt-lang-switch" aria-label="language switcher">
   {{ $current := .Lang }}
   {{ range .AllTranslations }}
-  <a href="{{ .RelPermalink }}" class="ppt-lang-btn {{ if eq .Lang $current }}active{{ end }}" title="{{ .Title }}">
+  <a href="{{ .RelPermalink }}" class="ppt-lang-btn {{ if eq .Lang $current }}active{{ end }}" title="{{ .Title }}" {{ if eq .Lang $current }}aria-current="page"{{ end }}>
     {{ .Language.Params.displayName | emojify }}
   </a>
   {{ end }}

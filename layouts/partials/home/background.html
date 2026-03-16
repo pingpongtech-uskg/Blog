@@ -1,18 +1,4 @@
-{{ $lang := .Site.Language.Lang }}
-{{ $heroTitle := "Securing the Digital Frontier." }}
-{{ $heroLead := "Cybersecurity insight on zero trust, critical infrastructure defense, and practical threat analysis." }}
-{{ $resourcesTitle := "Weekend Resources" }}
-{{ $resourcesCopy := "Only high-value B2B resources: white papers, conference passes, official certification offers, and enterprise reports." }}
 {{ $resourcesLink := "resources/" }}
-{{ if eq $lang "zh-tw" }}
-  {{ $heroLead = "聚焦零信任、關鍵基礎設施防護與可落地威脅分析的資安洞察。" }}
-  {{ $resourcesTitle = "週末資源" }}
-  {{ $resourcesCopy = "僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。" }}
-{{ else if eq $lang "ja" }}
-  {{ $heroLead = "ゼロトラスト、重要インフラ防御、実践的な脅威分析にフォーカスしたサイバーセキュリティ洞察。" }}
-  {{ $resourcesTitle = "週末リソース" }}
-  {{ $resourcesCopy = "高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。" }}
-{{ end }}
 
 <div class="relative w-full min-h-[620px] flex items-center overflow-hidden border-b border-[rgba(var(--color-secondary-400),0.14)] bg-[rgb(var(--color-primary-900))]">
   <canvas id="hero-canvas" class="absolute inset-0 z-0 h-full w-full block opacity-90"></canvas>
@@ -21,12 +7,12 @@
 
   <div class="hero-shell relative z-20 container mx-auto w-full max-w-7xl px-6 py-14 lg:px-10">
     <div class="max-w-3xl rounded-[1.75rem] border border-[rgba(var(--color-secondary-400),0.14)] bg-[rgba(5,15,32,0.58)] p-8 shadow-[0_24px_80px_rgba(0,7,20,0.48)] backdrop-blur-xl lg:p-12 animate-fade-in-up">
-      <div class="hero-kicker mb-4">PingPongTech Cybersecurity Think Tank</div>
+      <div class="hero-kicker mb-4">{{ i18n "home.hero.kicker" }}</div>
       <h1 class="mb-6 text-5xl font-black tracking-[-0.04em] text-white md:text-6xl xl:text-7xl">
-        {{ $heroTitle }}
+        {{ i18n "home.hero.title" }}
       </h1>
       <p class="max-w-2xl text-lg leading-8 text-[rgb(var(--color-neutral-100))] md:text-xl">
-        {{ $heroLead }}
+        {{ i18n "home.hero.lead" }}
       </p>
       <div class="mt-8 flex flex-wrap gap-3">
         <span class="security-pill">Zero Trust</span>
@@ -35,13 +21,13 @@
       </div>
       <div class="mt-10 flex flex-wrap gap-3">
         <a href="{{ relLangURL "posts/" }}" class="inline-flex items-center rounded-full bg-[rgb(var(--color-secondary-400))] px-6 py-3 text-sm font-bold text-[rgb(var(--color-primary-900))] transition hover:translate-y-[-1px] hover:bg-[rgb(var(--color-secondary-300))]">
-          {{ if eq $lang "zh-tw" }}閱讀文章{{ else if eq $lang "ja" }}記事を読む{{ else }}Explore Articles{{ end }}
+          {{ i18n "home.cta.articles" }}
         </a>
         <a href="{{ relLangURL "topic-map/" }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-neutral-200),0.28)] px-5 py-2.5 text-sm font-medium text-[rgb(var(--color-neutral-200))] transition hover:border-[rgba(var(--color-neutral-100),0.45)] hover:text-white">
-          {{ if eq $lang "zh-tw" }}主題地圖{{ else if eq $lang "ja" }}トピック{{ else }}Topic Map{{ end }}
+          {{ i18n "home.cta.topicMap" }}
         </a>
         <a href="{{ $resourcesLink | relLangURL }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-neutral-200),0.22)] px-5 py-2.5 text-sm font-medium text-[rgb(var(--color-neutral-300))] transition hover:border-[rgba(var(--color-neutral-100),0.4)] hover:text-[rgb(var(--color-neutral-100))]">
-          {{ if eq $lang "zh-tw" }}資源{{ else if eq $lang "ja" }}リソース{{ else }}Resources{{ end }}
+          {{ i18n "home.cta.resources" }}
         </a>
       </div>
     </div>
@@ -161,44 +147,44 @@
 </style>
 
 <section class="ppt-section-wrap" id="topics">
-  <h2 class="ppt-section-title">{{ if eq $lang "zh-tw" }}精選主題{{ else if eq $lang "ja" }}注目トピック{{ else }}Featured Topics{{ end }}</h2>
+  <h2 class="ppt-section-title">{{ i18n "home.topics.title" }}</h2>
   <div class="ppt-topic-grid">
     <article class="ppt-topic-card">
       <div class="ppt-topic-kicker">Topic</div>
       <h3 class="ppt-topic-title">Zero Trust Architecture</h3>
-      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}身分、裝置信任、分段策略與存取治理。{{ else if eq $lang "ja" }}ID・デバイス信頼・セグメンテーション・アクセス統制。{{ else }}Identity, device trust, segmentation, and access governance.{{ end }}</p>
+      <p class="ppt-topic-desc">{{ i18n "home.topics.zeroTrust.desc" }}</p>
     </article>
     <article class="ppt-topic-card">
       <div class="ppt-topic-kicker">Topic</div>
       <h3 class="ppt-topic-title">Critical Infrastructure Security</h3>
-      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}OT/IT 邊界風險、加固策略與營運韌性。{{ else if eq $lang "ja" }}OT/IT 境界リスク、ハードニング、運用レジリエンス。{{ else }}OT/IT boundary risk, hardening strategy, and operational resilience.{{ end }}</p>
+      <p class="ppt-topic-desc">{{ i18n "home.topics.criticalInfra.desc" }}</p>
     </article>
     <article class="ppt-topic-card">
       <div class="ppt-topic-kicker">Topic</div>
       <h3 class="ppt-topic-title">Threat Intelligence</h3>
-      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}攻擊脈絡、攻擊鏈映射與可落地緩解建議。{{ else if eq $lang "ja" }}攻撃コンテキスト、キルチェーン分析、実践的な緩和策。{{ else }}Attack context, kill chain mapping, and practical mitigation guidance.{{ end }}</p>
+      <p class="ppt-topic-desc">{{ i18n "home.topics.threatIntel.desc" }}</p>
     </article>
   </div>
 </section>
 
 <section class="ppt-section-wrap" id="resources">
-  <h2 class="ppt-section-title">{{ if eq $lang "zh-tw" }}週末資源（附屬專欄）{{ else if eq $lang "ja" }}週末リソース（サブコラム）{{ else }}Weekend Resources (Secondary Column){{ end }}</h2>
-  <div class="ppt-resource-note">{{ if eq $lang "zh-tw" }}僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。{{ else if eq $lang "ja" }}高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。{{ else }}Only high-value B2B resources: white papers, conference passes, official certification offers, and enterprise reports.{{ end }}</div>
+  <h2 class="ppt-section-title">{{ i18n "home.resources.title" }}</h2>
+  <div class="ppt-resource-note">{{ i18n "home.resources.note" }}</div>
   <div class="ppt-resource-grid">
     <article class="ppt-topic-card">
       <div class="ppt-topic-kicker">Resource</div>
       <h3 class="ppt-topic-title">SANS Whitepaper Unlock</h3>
-      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}聚焦 SOC 成熟度與 MITRE ATT&CK 落地洞察。{{ else if eq $lang "ja" }}SOC 成熟度と MITRE ATT&CK 実装の示唆。{{ else }}SOC maturity and MITRE ATT&CK operationalization insights.{{ end }}</p>
+      <p class="ppt-topic-desc">{{ i18n "home.resources.sans.desc" }}</p>
     </article>
     <article class="ppt-topic-card">
       <div class="ppt-topic-kicker">Resource</div>
       <h3 class="ppt-topic-title">Cloud Security Voucher Radar</h3>
-      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}AWS/Azure/GCP 官方活動與認證優惠追蹤。{{ else if eq $lang "ja" }}AWS/Azure/GCP 公式イベント・認定特典。{{ else }}AWS/Azure/GCP official event and certification promotions.{{ end }}</p>
+      <p class="ppt-topic-desc">{{ i18n "home.resources.voucher.desc" }}</p>
     </article>
     <article class="ppt-topic-card">
       <div class="ppt-topic-kicker">Resource</div>
       <h3 class="ppt-topic-title">Conference Opportunity Watch</h3>
-      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}Black Hat / RSA / 區域峰會早鳥與直播資訊。{{ else if eq $lang "ja" }}Black Hat / RSA / 地域サミットの早期登録と配信情報。{{ else }}Black Hat / RSA / regional summit early-bird and streaming access.{{ end }}</p>
+      <p class="ppt-topic-desc">{{ i18n "home.resources.conference.desc" }}</p>
     </article>
   </div>
 </section>
@@ -206,4 +192,3 @@
 <section id="recent-articles-list-container">
   {{ partial "recent-articles/main.html" . }}
 </section>
-ction>
