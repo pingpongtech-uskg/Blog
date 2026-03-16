@@ -375,14 +375,14 @@
     };
 
     const articles = [
-      { title: 'Zero Trust Segmentation Blueprint for SMB', topic: 'zero-trust', lang: 'EN', level: 'Intermediate' },
-      { title: 'Threat Intel Workflow: From IOC to Action', topic: 'threat-intel', lang: 'EN', level: 'Advanced' },
-      { title: 'Cloud IAM Misconfiguration Attack Paths', topic: 'cloud-sec', lang: 'EN', level: 'Advanced' },
-      { title: '零信任落地：從身分到網段策略', topic: 'zero-trust', lang: '繁中', level: '中高階' },
-      { title: '企業威脅情報的實務導入路線圖', topic: 'threat-intel', lang: '繁中', level: '中階' },
-      { title: '重要基礎設施資安分層防護模型', topic: 'infra-sec', lang: '繁中', level: '高階' },
-      { title: 'ゼロトラスト導入の現実解', topic: 'zero-trust', lang: '日本語', level: '中級' },
-      { title: '脅威インテリジェンス運用設計', topic: 'threat-intel', lang: '日本語', level: '上級' }
+      { title: 'Zero Trust Segmentation Blueprint for SMB', topic: 'zero-trust', lang: 'EN', langKey: 'en', level: 'Intermediate' },
+      { title: 'Threat Intel Workflow: From IOC to Action', topic: 'threat-intel', lang: 'EN', langKey: 'en', level: 'Advanced' },
+      { title: 'Cloud IAM Misconfiguration Attack Paths', topic: 'cloud-sec', lang: 'EN', langKey: 'en', level: 'Advanced' },
+      { title: '零信任落地：從身分到網段策略', topic: 'zero-trust', lang: '繁中', langKey: 'zh', level: '中高階' },
+      { title: '企業威脅情報的實務導入路線圖', topic: 'threat-intel', lang: '繁中', langKey: 'zh', level: '中階' },
+      { title: '重要基礎設施資安分層防護模型', topic: 'infra-sec', lang: '繁中', langKey: 'zh', level: '高階' },
+      { title: 'ゼロトラスト導入の現実解', topic: 'zero-trust', lang: '日本語', langKey: 'jp', level: '中級' },
+      { title: '脅威インテリジェンス運用設計', topic: 'threat-intel', lang: '日本語', langKey: 'jp', level: '上級' }
     ];
 
     const topicLabel = {
@@ -406,7 +406,11 @@
     function renderArticles() {
       const table = document.getElementById('articleTable');
       table.querySelectorAll('.row.data').forEach(n => n.remove());
-      const filtered = articles.filter(a => currentTopic === 'all' ? true : a.topic === currentTopic);
+      const filtered = articles.filter(a => {
+        const topicOk = currentTopic === 'all' ? true : a.topic === currentTopic;
+        const langOk = a.langKey === currentLang;
+        return topicOk && langOk;
+      });
       filtered.forEach(a => {
         const row = document.createElement('div');
         row.className = 'row data';
@@ -426,6 +430,7 @@
         document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         applyI18n();
+        renderArticles();
       });
     });
 

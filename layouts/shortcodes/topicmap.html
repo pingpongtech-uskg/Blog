@@ -1,4 +1,4 @@
-{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $posts := where (where .Site.RegularPages "Section" "posts") "Lang" .Site.Language.Lang }}
 {{ if gt (len $posts) 0 }}
 <div class="not-prose mt-8 overflow-hidden rounded-2xl border border-[rgba(var(--color-secondary-400),0.16)]">
   <div class="grid grid-cols-12 gap-3 bg-[rgba(var(--color-primary-900),0.7)] px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-300">
