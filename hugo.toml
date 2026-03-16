@@ -134,15 +134,20 @@ defaultContentLanguageInSubdir = true
     url = "/ja/posts/"
     weight = 10
   [[languages.ja.menu.main]]
+    identifier = "topic-map"
+    name = "トピックマップ"
+    url = "/ja/topic-map/"
+    weight = 20
+  [[languages.ja.menu.main]]
     identifier = "resources"
     name = "リソース"
     url = "/ja/resources/"
-    weight = 20
+    weight = 30
   [[languages.ja.menu.main]]
     identifier = "about"
     name = "私たちについて"
     url = "/ja/about/"
-    weight = 30
+    weight = 40
 
 [[menu.social]]
   identifier = "github"

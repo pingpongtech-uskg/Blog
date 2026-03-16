@@ -37,6 +37,9 @@
         <a href="{{ relLangURL "posts/" }}" class="inline-flex items-center rounded-full bg-[rgb(var(--color-secondary-400))] px-6 py-3 text-sm font-bold text-[rgb(var(--color-primary-900))] transition hover:translate-y-[-1px] hover:bg-[rgb(var(--color-secondary-300))]">
           {{ if eq $lang "zh-tw" }}閱讀文章{{ else if eq $lang "ja" }}記事を読む{{ else }}Explore Articles{{ end }}
         </a>
+        <a href="{{ relLangURL "topic-map/" }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-secondary-400),0.26)] px-6 py-3 text-sm font-semibold text-white transition hover:border-[rgba(var(--color-secondary-300),0.48)] hover:bg-[rgba(var(--color-secondary-400),0.08)]">
+          {{ if eq $lang "zh-tw" }}瀏覽主題地圖{{ else if eq $lang "ja" }}トピックマップを見る{{ else }}Browse Topic Map{{ end }}
+        </a>
         <a href="{{ $resourcesLink | relLangURL }}" class="inline-flex items-center rounded-full border border-[rgba(var(--color-secondary-400),0.26)] px-6 py-3 text-sm font-semibold text-white transition hover:border-[rgba(var(--color-secondary-300),0.48)] hover:bg-[rgba(var(--color-secondary-400),0.08)]">
           {{ if eq $lang "zh-tw" }}查看資源庫{{ else if eq $lang "ja" }}リソースを見る{{ else }}Browse Resources{{ end }}
         </a>

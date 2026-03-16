@@ -1,0 +1,23 @@
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if gt (len $posts) 0 }}
+<div class="not-prose mt-8 overflow-hidden rounded-2xl border border-[rgba(var(--color-secondary-400),0.16)]">
+  <div class="grid grid-cols-12 gap-3 bg-[rgba(var(--color-primary-900),0.7)] px-4 py-3 text-xs font-semibold uppercase tracking-wide text-neutral-300">
+    <div class="col-span-6 md:col-span-5">Article</div>
+    <div class="hidden md:block md:col-span-3">Topic</div>
+    <div class="col-span-3 md:col-span-2">Language</div>
+    <div class="col-span-3 md:col-span-2">Date</div>
+  </div>
+  {{ range $posts.ByDate.Reverse }}
+  <a href="{{ .RelPermalink }}" class="grid grid-cols-12 gap-3 border-t border-[rgba(var(--color-secondary-400),0.10)] px-4 py-3 text-sm transition hover:bg-[rgba(var(--color-secondary-400),0.08)]">
+    <div class="col-span-6 md:col-span-5 font-medium text-neutral-100">{{ .Title }}</div>
+    <div class="hidden md:block md:col-span-3 text-neutral-300">
+      {{ with .Params.categories }}{{ index . 0 }}{{ else }}General{{ end }}
+    </div>
+    <div class="col-span-3 md:col-span-2 text-neutral-300">{{ .Lang | upper }}</div>
+    <div class="col-span-3 md:col-span-2 text-neutral-300">{{ .Date.Format "2006-01-02" }}</div>
+  </a>
+  {{ end }}
+</div>
+{{ else }}
+<p>{{ i18n "list.no_articles" | emojify }}</p>
+{{ end }}
