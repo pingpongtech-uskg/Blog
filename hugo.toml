@@ -38,6 +38,7 @@ defaultContentLanguageInSubdir = true
 
   [params.list]
     showHero = true
+    heroStyle = "ppt"
     showBreadcrumbs = false
     showSummary = true
     showTableOfContents = true
