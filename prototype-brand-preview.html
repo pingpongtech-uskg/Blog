@@ -18,6 +18,7 @@
     }
 
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: Inter, "Noto Sans TC", "Noto Sans JP", system-ui, -apple-system, sans-serif;
@@ -41,14 +42,32 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 12px;
     }
-    .brand { font-weight: 700; letter-spacing: .4px; }
-    .lang {
-      color: var(--muted);
-      font-size: 14px;
+    .brand { font-weight: 700; letter-spacing: .4px; white-space: nowrap; }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 6px;
       border: 1px solid var(--line);
-      padding: 6px 10px;
       border-radius: 10px;
+      padding: 4px;
+      background: rgba(255,255,255,.02);
+    }
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+    .lang-btn.active {
+      color: #051016;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      font-weight: 700;
     }
 
     .hero {
@@ -158,6 +177,60 @@
       font-size: 14px;
     }
 
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .chip {
+      border: 1px solid var(--line);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+    }
+    .chip.active {
+      color: #051016;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border-color: transparent;
+      font-weight: 700;
+    }
+
+    .articles {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(17,31,54,.45);
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1.6fr .8fr .7fr .7fr;
+      gap: 8px;
+      padding: 12px 14px;
+      border-top: 1px solid rgba(94,234,212,.10);
+      font-size: 14px;
+    }
+    .row:first-child { border-top: 0; }
+    .row.head {
+      font-size: 12px;
+      color: var(--muted);
+      background: rgba(0,0,0,.16);
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 11px;
+      color: var(--muted);
+      margin-left: 6px;
+    }
+
     .footer {
       border-top: 1px solid var(--line);
       color: var(--muted);
@@ -167,54 +240,206 @@
       margin: 0 auto;
     }
 
-    @media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .row { grid-template-columns: 1.6fr .8fr .8fr; }
+      .row > :nth-child(4) { display: none; }
+    }
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+      .row { grid-template-columns: 1fr; gap: 4px; }
+      .row.head { display: none; }
+      .row > div::before { color: var(--muted); font-size: 12px; margin-right: 6px; }
+      .row > div:nth-child(1)::before { content: "文章："; }
+      .row > div:nth-child(2)::before { content: "主題："; }
+      .row > div:nth-child(3)::before { content: "語言："; }
+      .row > div:nth-child(4)::before { content: "難度："; }
+    }
   </style>
 </head>
 <body>
   <header class="nav">
     <div class="nav-inner">
       <div class="brand">PingPongTech</div>
-      <div class="lang">EN / 繁中 / 日本語</div>
+      <div class="lang-switch" aria-label="language switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="zh">繁中</button>
+        <button class="lang-btn" data-lang="jp">日本語</button>
+      </div>
     </div>
   </header>
 
   <section class="hero">
     <div class="pulse"></div>
-    <span class="badge">Cybersecurity Research & Advisory</span>
-    <h1>Securing the Digital Frontier.</h1>
-    <p class="sub">
-      PingPongTech 專注於零信任架構、關鍵基礎設施防護與威脅分析，
-      以研究導向內容協助企業打造可持續的資安韌性。
+    <span class="badge" data-i18n="badge">Cybersecurity Research & Advisory</span>
+    <h1 data-i18n="h1">Securing the Digital Frontier.</h1>
+    <p class="sub" data-i18n="sub">
+      PingPongTech focuses on zero trust architecture, critical infrastructure defense, and threat intelligence to help enterprises build durable cyber resilience.
     </p>
     <div class="cta">
-      <a class="btn primary" href="#">探索研究文章</a>
-      <a class="btn" href="#">瀏覽主題地圖</a>
-      <a class="btn" href="#">訂閱 Weekly Radar</a>
+      <a class="btn primary" href="#topics" data-i18n="cta1">Explore Research</a>
+      <a class="btn" href="#map" data-i18n="cta2">Browse Topic Map</a>
+      <a class="btn" href="#resources" data-i18n="cta3">Subscribe Weekly Radar</a>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Featured Topics</h2>
+  <section class="section" id="topics">
+    <h2 data-i18n="topicsTitle">Featured Topics</h2>
     <div class="grid">
-      <article class="card"><div class="kicker">Topic</div><h3>Zero Trust Architecture</h3><p>架構設計、分段策略、身分與裝置信任模型。</p></article>
-      <article class="card"><div class="kicker">Topic</div><h3>Critical Infrastructure Security</h3><p>OT/IT 交界風險、保護策略與營運韌性。</p></article>
-      <article class="card"><div class="kicker">Topic</div><h3>Threat Intelligence</h3><p>事件脈絡、攻擊路徑、可行防禦建議。</p></article>
+      <article class="card"><div class="kicker">Topic</div><h3>Zero Trust Architecture</h3><p data-i18n="topic1">Identity, device trust, segmentation, and access governance.</p></article>
+      <article class="card"><div class="kicker">Topic</div><h3>Critical Infrastructure Security</h3><p data-i18n="topic2">OT/IT boundary risk, hardening strategy, operational resilience.</p></article>
+      <article class="card"><div class="kicker">Topic</div><h3>Threat Intelligence</h3><p data-i18n="topic3">Attack context, kill chain mapping, practical mitigation guidance.</p></article>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Weekend Resources（附屬專欄）</h2>
-    <div class="news">僅收錄高價值 B2B 資源：白皮書、研究報告、官方認證優惠、頂級會議票務與直播資訊。</div>
+  <section class="section" id="map">
+    <h2 data-i18n="mapTitle">主題地圖（全量文章可探索）</h2>
+    <div class="toolbar" id="topicFilters">
+      <span class="chip active" data-topic="all" data-i18n="filterAll">全部主題</span>
+      <span class="chip" data-topic="zero-trust">Zero Trust</span>
+      <span class="chip" data-topic="threat-intel">Threat Intel</span>
+      <span class="chip" data-topic="cloud-sec">Cloud Security</span>
+      <span class="chip" data-topic="infra-sec">Infrastructure</span>
+    </div>
+    <div class="articles" id="articleTable">
+      <div class="row head">
+        <div data-i18n="colArticle">Article</div>
+        <div data-i18n="colTopic">Topic</div>
+        <div data-i18n="colLang">Lang</div>
+        <div data-i18n="colLevel">Level</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="resources">
+    <h2 data-i18n="resTitle">Weekend Resources（附屬專欄）</h2>
+    <div class="news" data-i18n="resDesc">Only high-value B2B resources: whitepapers, conference passes, official certification offers, and enterprise reports.</div>
     <div class="grid" style="margin-top:12px;">
-      <article class="card"><div class="kicker">Resource</div><h3>SANS 白皮書限時解鎖</h3><p>聚焦 SOC 偵測成熟度與 MITRE ATT&CK 落地。</p></article>
-      <article class="card"><div class="kicker">Resource</div><h3>Cloud Security 認證券</h3><p>AWS/Azure/GCP 官方活動與考試優惠。</p></article>
-      <article class="card"><div class="kicker">Resource</div><h3>Conference Radar</h3><p>Black Hat / RSA / regional summit 的早鳥與直播資訊。</p></article>
+      <article class="card"><div class="kicker">Resource</div><h3>SANS Whitepaper Unlock</h3><p data-i18n="res1">SOC maturity and MITRE ATT&CK operationalization insights.</p></article>
+      <article class="card"><div class="kicker">Resource</div><h3>Cloud Security Voucher Radar</h3><p data-i18n="res2">AWS/Azure/GCP official event and certification promotions.</p></article>
+      <article class="card"><div class="kicker">Resource</div><h3>Conference Opportunity Watch</h3><p data-i18n="res3">Black Hat / RSA / regional summit early-bird and streaming access.</p></article>
     </div>
   </section>
 
-  <footer class="footer">
-    Preview only — 靜態網站方向原型（深色專業 + 克制動效 + 智庫導向內容結構）
+  <footer class="footer" data-i18n="footer">
+    Preview only — Direction prototype (dark professional visual language + restrained motion + think-tank content structure)
   </footer>
+
+  <script>
+    const i18n = {
+      en: {
+        badge: 'Cybersecurity Research & Advisory',
+        h1: 'Securing the Digital Frontier.',
+        sub: 'PingPongTech focuses on zero trust architecture, critical infrastructure defense, and threat intelligence to help enterprises build durable cyber resilience.',
+        cta1: 'Explore Research', cta2: 'Browse Topic Map', cta3: 'Subscribe Weekly Radar',
+        topicsTitle: 'Featured Topics', topic1: 'Identity, device trust, segmentation, and access governance.', topic2: 'OT/IT boundary risk, hardening strategy, operational resilience.', topic3: 'Attack context, kill chain mapping, practical mitigation guidance.',
+        mapTitle: 'Topic Map (Explore all articles)', filterAll: 'All Topics',
+        colArticle: 'Article', colTopic: 'Topic', colLang: 'Lang', colLevel: 'Level',
+        resTitle: 'Weekend Resources (Secondary Column)',
+        resDesc: 'Only high-value B2B resources: whitepapers, conference passes, official certification offers, and enterprise reports.',
+        res1: 'SOC maturity and MITRE ATT&CK operationalization insights.',
+        res2: 'AWS/Azure/GCP official event and certification promotions.',
+        res3: 'Black Hat / RSA / regional summit early-bird and streaming access.',
+        footer: 'Preview only — Direction prototype (dark professional visual language + restrained motion + think-tank content structure)'
+      },
+      zh: {
+        badge: '資安研究與顧問導向',
+        h1: 'Securing the Digital Frontier.',
+        sub: 'PingPongTech 專注於零信任架構、關鍵基礎設施防護與威脅情報，協助企業打造可持續的資安韌性。',
+        cta1: '探索研究文章', cta2: '瀏覽主題地圖', cta3: '訂閱 Weekly Radar',
+        topicsTitle: '精選主題', topic1: '身分、裝置信任、網段分區與存取治理。', topic2: 'OT/IT 邊界風險、加固策略與營運韌性。', topic3: '攻擊脈絡、攻擊鏈映射與可落地緩解建議。',
+        mapTitle: '主題地圖（全量文章可探索）', filterAll: '全部主題',
+        colArticle: '文章', colTopic: '主題', colLang: '語言', colLevel: '難度',
+        resTitle: '週末資源（附屬專欄）',
+        resDesc: '僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。',
+        res1: '聚焦 SOC 成熟度與 MITRE ATT&CK 落地。',
+        res2: 'AWS/Azure/GCP 官方活動與認證優惠追蹤。',
+        res3: 'Black Hat / RSA / 區域峰會早鳥與直播資訊。',
+        footer: '原型預覽 — 深色專業視覺 + 克制動效 + 智庫導向內容結構'
+      },
+      jp: {
+        badge: 'サイバーセキュリティ研究・アドバイザリー',
+        h1: 'Securing the Digital Frontier.',
+        sub: 'PingPongTech はゼロトラスト設計、重要インフラ防御、脅威インテリジェンスに注力し、企業の持続的なセキュリティレジリエンスを支援します。',
+        cta1: '研究記事を見る', cta2: 'トピックマップを見る', cta3: 'Weekly Radar を購読',
+        topicsTitle: '注目トピック', topic1: 'ID・デバイス信頼・セグメンテーション・アクセス統制。', topic2: 'OT/IT 境界リスク、ハードニング、運用レジリエンス。', topic3: '攻撃コンテキスト、キルチェーン分析、実践的な緩和策。',
+        mapTitle: 'トピックマップ（全記事を探索）', filterAll: 'すべてのトピック',
+        colArticle: '記事', colTopic: 'トピック', colLang: '言語', colLevel: '難易度',
+        resTitle: '週末リソース（サブコラム）',
+        resDesc: '高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。',
+        res1: 'SOC 成熟度と MITRE ATT&CK 実装の示唆。',
+        res2: 'AWS/Azure/GCP 公式イベント・認定特典。',
+        res3: 'Black Hat / RSA / 地域サミットの早期登録と配信情報。',
+        footer: 'プレビュー — ダークでプロフェッショナルな表現 + 控えめなモーション + シンクタンク型構成'
+      }
+    };
+
+    const articles = [
+      { title: 'Zero Trust Segmentation Blueprint for SMB', topic: 'zero-trust', lang: 'EN', level: 'Intermediate' },
+      { title: 'Threat Intel Workflow: From IOC to Action', topic: 'threat-intel', lang: 'EN', level: 'Advanced' },
+      { title: 'Cloud IAM Misconfiguration Attack Paths', topic: 'cloud-sec', lang: 'EN', level: 'Advanced' },
+      { title: '零信任落地：從身分到網段策略', topic: 'zero-trust', lang: '繁中', level: '中高階' },
+      { title: '企業威脅情報的實務導入路線圖', topic: 'threat-intel', lang: '繁中', level: '中階' },
+      { title: '重要基礎設施資安分層防護模型', topic: 'infra-sec', lang: '繁中', level: '高階' },
+      { title: 'ゼロトラスト導入の現実解', topic: 'zero-trust', lang: '日本語', level: '中級' },
+      { title: '脅威インテリジェンス運用設計', topic: 'threat-intel', lang: '日本語', level: '上級' }
+    ];
+
+    const topicLabel = {
+      'zero-trust': 'Zero Trust',
+      'threat-intel': 'Threat Intel',
+      'cloud-sec': 'Cloud Security',
+      'infra-sec': 'Infrastructure'
+    };
+
+    let currentLang = 'en';
+    let currentTopic = 'all';
+
+    function applyI18n() {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[currentLang][key]) el.textContent = i18n[currentLang][key];
+      });
+      document.documentElement.lang = currentLang === 'zh' ? 'zh-Hant' : (currentLang === 'jp' ? 'ja' : 'en');
+    }
+
+    function renderArticles() {
+      const table = document.getElementById('articleTable');
+      table.querySelectorAll('.row.data').forEach(n => n.remove());
+      const filtered = articles.filter(a => currentTopic === 'all' ? true : a.topic === currentTopic);
+      filtered.forEach(a => {
+        const row = document.createElement('div');
+        row.className = 'row data';
+        row.innerHTML = `
+          <div>${a.title}</div>
+          <div>${topicLabel[a.topic] || a.topic}</div>
+          <div>${a.lang}</div>
+          <div>${a.level}</div>
+        `;
+        table.appendChild(row);
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentLang = btn.dataset.lang;
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyI18n();
+      });
+    });
+
+    document.querySelectorAll('#topicFilters .chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        currentTopic = chip.dataset.topic;
+        document.querySelectorAll('#topicFilters .chip').forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        renderArticles();
+      });
+    });
+
+    applyI18n();
+    renderArticles();
+  </script>
 </body>
 </html>
