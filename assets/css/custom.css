@@ -140,3 +140,100 @@ main section section article:hover {
     scroll-behavior: auto !important;
   }
 }
+
+/* Header language switch to match prototype style */
+.ppt-lang-switch {
+  display: inline-flex;
+  gap: 0.35rem;
+  border: 1px solid rgba(var(--color-secondary-400), 0.22);
+  border-radius: 0.7rem;
+  padding: 0.2rem;
+  background: rgba(8, 16, 30, 0.45);
+  backdrop-filter: blur(8px);
+}
+
+.ppt-lang-btn {
+  color: rgb(var(--color-neutral-300));
+  font-size: 0.78rem;
+  line-height: 1;
+  padding: 0.42rem 0.58rem;
+  border-radius: 0.45rem;
+  text-decoration: none;
+  transition: all 160ms ease;
+}
+
+.ppt-lang-btn:hover {
+  color: rgb(var(--color-neutral-50));
+  background: rgba(var(--color-secondary-400), 0.14);
+}
+
+.ppt-lang-btn.active {
+  color: rgb(var(--color-primary-900));
+  font-weight: 700;
+  background: linear-gradient(90deg, rgb(var(--color-secondary-400)), rgb(var(--color-secondary-300)));
+}
+
+/* Homepage sections matching preview look */
+.ppt-section-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2.2rem;
+}
+
+.ppt-section-title {
+  margin: 0 0 0.85rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: rgb(var(--color-neutral-50));
+}
+
+.ppt-topic-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ppt-topic-card {
+  border: 1px solid rgba(var(--color-secondary-400), 0.14);
+  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  background: linear-gradient(180deg, rgba(17, 31, 54, 0.88), rgba(17, 31, 54, 0.68));
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.ppt-topic-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(var(--color-secondary-400), 0.34);
+}
+
+.ppt-topic-kicker {
+  font-size: 0.73rem;
+  color: rgb(var(--color-secondary-300));
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ppt-topic-title {
+  margin: 0.32rem 0 0.45rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.ppt-topic-desc {
+  margin: 0;
+  color: rgb(var(--color-neutral-300));
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .ppt-topic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .ppt-topic-grid {
+    grid-template-columns: 1fr;
+  }
+}
