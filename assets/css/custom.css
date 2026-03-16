@@ -96,9 +96,9 @@ main section section article,
 .recent-article-card > article:hover,
 .article-list > article:hover,
 main section section article:hover {
-  transform: translateY(-4px);
-  border-color: rgba(var(--color-secondary-400), 0.32);
-  box-shadow: 0 0 0 1px rgba(var(--color-secondary-400), 0.24), 0 24px 48px rgba(2, 10, 22, 0.44);
+  transform: translateY(-2px);
+  border-color: rgba(var(--color-secondary-400), 0.24);
+  box-shadow: 0 0 0 1px rgba(var(--color-secondary-400), 0.18), 0 16px 32px rgba(2, 10, 22, 0.34);
 }
 
 .prose :where(a):not(:where(.not-prose *)) {
