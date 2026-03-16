@@ -1,17 +1,17 @@
 {{ $lang := .Site.Language.Lang }}
 {{ $heroTitle := "Securing the Digital Frontier." }}
 {{ $heroLead := "PingPongTech is a cybersecurity think tank focused on zero trust architecture, critical infrastructure defense, and the latest threat analysis for resilient digital operations." }}
-{{ $resourcesTitle := "Resources" }}
-{{ $resourcesCopy := "Curated white papers, executive briefings, and technical reports designed for B2B security leaders." }}
+{{ $resourcesTitle := "Weekend Resources" }}
+{{ $resourcesCopy := "Only high-value B2B resources: white papers, conference passes, official certification offers, and enterprise reports." }}
 {{ $resourcesLink := "resources/" }}
 {{ if eq $lang "zh-tw" }}
   {{ $heroLead = "PingPongTech 是專注於零信任架構、關鍵基礎設施防護與最新威脅分析的資安智庫，為企業提供兼具戰略視角與技術深度的洞察。" }}
-  {{ $resourcesTitle = "資源庫" }}
-  {{ $resourcesCopy = "集中收錄高價值 B2B 資安白皮書、決策簡報與研究報告，協助企業強化防禦韌性。" }}
+  {{ $resourcesTitle = "週末資源" }}
+  {{ $resourcesCopy = "僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。" }}
 {{ else if eq $lang "ja" }}
   {{ $heroLead = "PingPongTech は、ゼロトラストアーキテクチャ、重要インフラ防御、最新の脅威分析に特化したサイバーセキュリティ・シンクタンクです。" }}
-  {{ $resourcesTitle = "リソース" }}
-  {{ $resourcesCopy = "B2B 向けの高付加価値なホワイトペーパー、エグゼクティブブリーフ、技術レポートを集約。" }}
+  {{ $resourcesTitle = "週末リソース" }}
+  {{ $resourcesCopy = "高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。" }}
 {{ end }}
 
 <div class="relative w-full min-h-[620px] flex items-center overflow-hidden border-b border-[rgba(var(--color-secondary-400),0.14)] bg-[rgb(var(--color-primary-900))]">
@@ -197,6 +197,28 @@
       <div class="ppt-topic-kicker">Topic</div>
       <h3 class="ppt-topic-title">Threat Intelligence</h3>
       <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}攻擊脈絡、攻擊鏈映射與可落地緩解建議。{{ else if eq $lang "ja" }}攻撃コンテキスト、キルチェーン分析、実践的な緩和策。{{ else }}Attack context, kill chain mapping, and practical mitigation guidance.{{ end }}</p>
+    </article>
+  </div>
+</section>
+
+<section class="ppt-section-wrap" id="resources">
+  <h2 class="ppt-section-title">{{ if eq $lang "zh-tw" }}週末資源（附屬專欄）{{ else if eq $lang "ja" }}週末リソース（サブコラム）{{ else }}Weekend Resources (Secondary Column){{ end }}</h2>
+  <div class="ppt-resource-note">{{ if eq $lang "zh-tw" }}僅收錄高價值 B2B 資源：白皮書、會議名額、官方認證優惠與企業研究報告。{{ else if eq $lang "ja" }}高価値な B2B リソースのみ：ホワイトペーパー、カンファレンス枠、公式認定特典、企業レポート。{{ else }}Only high-value B2B resources: white papers, conference passes, official certification offers, and enterprise reports.{{ end }}</div>
+  <div class="ppt-resource-grid">
+    <article class="ppt-topic-card">
+      <div class="ppt-topic-kicker">Resource</div>
+      <h3 class="ppt-topic-title">SANS Whitepaper Unlock</h3>
+      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}聚焦 SOC 成熟度與 MITRE ATT&CK 落地洞察。{{ else if eq $lang "ja" }}SOC 成熟度と MITRE ATT&CK 実装の示唆。{{ else }}SOC maturity and MITRE ATT&CK operationalization insights.{{ end }}</p>
+    </article>
+    <article class="ppt-topic-card">
+      <div class="ppt-topic-kicker">Resource</div>
+      <h3 class="ppt-topic-title">Cloud Security Voucher Radar</h3>
+      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}AWS/Azure/GCP 官方活動與認證優惠追蹤。{{ else if eq $lang "ja" }}AWS/Azure/GCP 公式イベント・認定特典。{{ else }}AWS/Azure/GCP official event and certification promotions.{{ end }}</p>
+    </article>
+    <article class="ppt-topic-card">
+      <div class="ppt-topic-kicker">Resource</div>
+      <h3 class="ppt-topic-title">Conference Opportunity Watch</h3>
+      <p class="ppt-topic-desc">{{ if eq $lang "zh-tw" }}Black Hat / RSA / 區域峰會早鳥與直播資訊。{{ else if eq $lang "ja" }}Black Hat / RSA / 地域サミットの早期登録と配信情報。{{ else }}Black Hat / RSA / regional summit early-bird and streaming access.{{ end }}</p>
     </article>
   </div>
 </section>
